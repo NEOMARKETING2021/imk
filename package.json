@@ -1,0 +1,54 @@
+{
+  "name": "imp_lp",
+  "version": "1.0.0",
+  "description": "imk LP description",
+  "main": "index.js",
+  "scripts": {
+    "build:eleventy": "eleventy",
+    "serve:eleventy": "eleventy --serve",
+    "watch": "npm run watch:sass & npm run watch:tailwindcss & npm run serve:eleventy",
+    "watch:tailwindcss": "npx tailwindcss -i ./src/tailwindcss-input.css -o ./dist/styles/tailwind.css --watch",
+    "watch:sass": "sass --no-source-map --watch src/styles/:dist/styles/",
+    "eslint": "eslint dist/**/*.js --fix",
+    "prettier": "prettier --write dist/**/*.{js,css,html}",
+    "stylelint": "stylelint 'src/**/*.scss' --fix && stylelint 'dist/**/*.css' --fix",
+    "format": "npm run eslint && npm run prettier && npm run stylelint",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "volta": {
+    "node": "18.16.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-prettier": "^3.0.0",
+    "stylelint-scss": "^5.0.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{scss,css}": [
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ]
+  }
+}
