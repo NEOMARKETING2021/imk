@@ -6,15 +6,15 @@
 
 .l-container {
   width: 100%;
-  max-width: (1000px + 32px * 2);
-  padding-right: 20px;
-  padding-left: 20px;
+  max-width: 102.4rem;
+  padding-right: 5.8rem;
+  padding-left: 5.8rem;
   margin-right: auto;
   margin-left: auto;
 
   @include mq-cdt(tablet) {
-    padding-right: 32px;
-    padding-left: 32px;
+    // padding-right: 32px;
+    // padding-left: 32px;
   }
 
   .l-container__px {

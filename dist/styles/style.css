@@ -2,7 +2,10 @@
 @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap';
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
+
+  /* 16px × 62.5% = 10px → 1rem = 10px */
 }
 
 body {
@@ -12,10 +15,13 @@ body {
   min-height: 100dvh;
   margin: 0;
   font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 160%;
   color: #555;
   background-color: oklch(96.8% 0.007 247.896deg);
+
+  /* 16px */
 }
 
 .l-body {
@@ -26,18 +32,11 @@ body {
 
 .l-container {
   width: 100%;
-  max-width: 1064px;
-  padding-right: 20px;
-  padding-left: 20px;
+  max-width: 102.4rem;
+  padding-right: 5.8rem;
+  padding-left: 5.8rem;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media screen and (width >= 768px) {
-  .l-container {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
 }
 .l-container .l-container__px {
   padding-right: 20px;
@@ -133,13 +132,18 @@ body {
   border-radius: 9999px;
 }
 .c-button.c-button--light {
-  background-color: #c11920;
+  background-color: #736869;
 }
 .c-button::before {
   content: '';
 }
 .c-button::after {
   font-size: 24px;
+}
+
+.p-footer {
+  color: #fff;
+  background-color: #736869;
 }
 
 /* ローディング画面 */
@@ -151,7 +155,7 @@ body {
   display: grid;
   width: 100vw;
   height: 100dvh;
-  background-color: #c11920;
+  background-color: #736869;
   transition: all 1s;
 }
 
@@ -320,7 +324,6 @@ body {
 
 .p-site-wrapper {
   width: 100%;
-  max-width: 960px;
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
