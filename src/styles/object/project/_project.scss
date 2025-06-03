@@ -7,11 +7,7 @@
 }
 
 .p-main {
-  padding-bottom: 60px;
-
-  @include mq-cdt(tablet) {
-    padding-bottom: 100px;
-  }
+  // proparty: value;
 }
 
 .p-logo {
@@ -48,4 +44,46 @@
   @include mq-cdt(laptop) {
     max-width: (509px * 0.7);
   }
+}
+
+.p-header {
+  background: #fff;
+}
+
+.p-concept {
+  background: #fff;
+}
+
+.p-damage-solution {
+  background: $color-quinary;
+}
+
+.p-points {
+  background: #fff;
+}
+
+.p-cta {
+  background: $color-quaternary url('../images/cta-bg.png') center;
+  background-size: 1024px;
+
+  .p-cta__button {
+    background: $color-tertiary;
+    border-radius: 9999px;
+  }
+}
+
+.p-trouble {
+  background-color: #fff;
+}
+
+.p-damage-awareness {
+  background-color: #fff;
+}
+
+.p-how-to-use {
+  background-color: #fff;
+}
+
+.p-product {
+  // proparty: value;
 }

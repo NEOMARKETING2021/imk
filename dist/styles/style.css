@@ -19,9 +19,6 @@ body {
   font-weight: 400;
   line-height: 160%;
   color: #555;
-  background-color: oklch(96.8% 0.007 247.896deg);
-
-  /* 16px */
 }
 
 .l-body {
@@ -88,7 +85,7 @@ body {
   margin-left: auto;
   font-size: 16px;
   line-height: 1;
-  background-color: #fff100;
+  background-color: #ae8e4c;
   border-radius: 9999px;
 }
 
@@ -128,7 +125,7 @@ body {
   margin-left: auto;
   font-size: 16px;
   color: #fff;
-  background-color: #1fa6e4;
+  background-color: #b1b199;
   border-radius: 9999px;
 }
 .c-button.c-button--light {
@@ -141,9 +138,38 @@ body {
   font-size: 24px;
 }
 
+.c-heading-primary {
+  font-size: 2.6rem;
+  color: #736869;
+}
+.c-heading-primary.c-heading-primary--cta {
+  font-size: 2.2rem;
+}
+
+.c-heading-primary-sub {
+  display: inline-block;
+  margin-left: -3rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #efece6;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  text-orientation: upright;
+}
+
+.c-heading-secondary {
+  font-size: 3rem;
+  color: #ae8e4c;
+}
+
 .p-footer {
   color: #fff;
   background-color: #736869;
+}
+
+.p-footer__button {
+  background-color: #e3e1e1;
+  border-radius: 9999px;
 }
 
 /* ローディング画面 */
@@ -330,16 +356,6 @@ body {
   background-color: white;
 }
 
-.p-main {
-  padding-bottom: 60px;
-}
-
-@media screen and (width >= 768px) {
-  .p-main {
-    padding-bottom: 100px;
-  }
-}
-
 .p-logo {
   max-width: 153.6px;
   margin-right: auto;
@@ -374,4 +390,41 @@ body {
   .p-light-logo {
     max-width: 356.3px;
   }
+}
+
+.p-header {
+  background: #fff;
+}
+
+.p-concept {
+  background: #fff;
+}
+
+.p-damage-solution {
+  background: #f8f7f3;
+}
+
+.p-points {
+  background: #fff;
+}
+
+.p-cta {
+  background: #efece6 url('../images/cta-bg.png') center;
+  background-size: 1024px;
+}
+.p-cta .p-cta__button {
+  background: #b1b199;
+  border-radius: 9999px;
+}
+
+.p-trouble {
+  background-color: #fff;
+}
+
+.p-damage-awareness {
+  background-color: #fff;
+}
+
+.p-how-to-use {
+  background-color: #fff;
 }
