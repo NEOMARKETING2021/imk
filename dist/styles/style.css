@@ -45,15 +45,19 @@ body {
   }
 }
 
+.l-container-setback {
+  margin-left: 17.2rem;
+}
+
 .c-button-cta__arrow {
   position: absolute;
+  top: 50%;
+  right: 3rem;
   display: inline-block;
   width: 9px;
   height: 1px;
+  background-color: #fff;
   border-radius: 9999px;
-  background-color: #ffffff;
-  right: 3rem;
-  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -64,9 +68,9 @@ body {
   right: 0;
   width: 6px;
   height: 1px;
-  border-radius: 9999px;
-  background-color: #ffffff;
   content: '';
+  background-color: #fff;
+  border-radius: 9999px;
   transform-origin: calc(100% - 0.5px) 50%;
 }
 
@@ -79,14 +83,14 @@ body {
 }
 
 .c-button-cta {
+  position: relative;
   display: grid;
+  place-items: center;
   width: 27.7rem;
   height: 7rem;
-  border-radius: 9999px;
-  background: #b1b199;
   color: #fff;
-  place-items: center;
-  position: relative;
+  background: #b1b199;
+  border-radius: 9999px;
 }
 .c-button-cta:hover .c-button-cta__arrow {
   right: 2.7rem;
@@ -277,9 +281,9 @@ body.no-scroll {
 }
 
 .c-heading-primary {
-  color: #736869;
-  font-size: 2.6rem;
   font-family: var(--font-mincho);
+  font-size: 2.6rem;
+  color: #736869;
 }
 .c-heading-primary.c-heading-primary--cta {
   font-size: 2.2rem;
@@ -288,19 +292,19 @@ body.no-scroll {
 .c-heading-primary-sub {
   display: inline-block;
   margin-left: -3rem;
-  color: #efece6;
-  font-size: 1.4rem;
   font-family: var(--font-mincho);
+  font-size: 1.4rem;
   line-height: 1;
+  color: #efece6;
   transform: rotate(90deg);
   transform-origin: left bottom;
   text-orientation: upright;
 }
 
 .c-heading-secondary {
-  color: #ae8e4c;
-  font-size: 3rem;
   font-family: var(--font-mincho);
+  font-size: 3rem;
+  color: #ae8e4c;
 }
 
 @keyframes fluidrotate {
@@ -413,15 +417,15 @@ body.no-scroll {
 }
 
 .p-cta {
-  background: #fff url('../images/cta-bg.png') center;
-  background-size: 1024px;
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
+  background: #fff url('../images/cta-bg.png') center;
+  background-size: 1024px;
 }
 
 .p-cta__heading {
-  text-align: center;
   margin-bottom: 3.2rem;
+  text-align: center;
 }
 
 .p-cta__buttons {
@@ -436,15 +440,15 @@ body.no-scroll {
 }
 
 .p-cta__description {
-  text-align: center;
-  font-size: 1.8rem;
   margin-top: 3.2rem;
+  font-size: 1.8rem;
   line-height: 1.75;
+  text-align: center;
 }
 @media (width >= 768px) {
   .p-cta__description {
-    line-height: 2;
     font-size: 2.2rem;
+    line-height: 2;
   }
 }
 
@@ -613,7 +617,7 @@ body.no-scroll {
 }
 
 .p-damage-awareness {
-  background-color: #fff;
+  background-color: yellow;
 }
 
 .p-how-to-use {
