@@ -21,6 +21,33 @@ body.no-scroll {
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
     transform: translateX(30px);
+
+    @media (width >=1024px) {
+      opacity: 1;
+      transform: unset;
+    }
+  }
+
+  @media (width >=1024px) {
+    position: unset;
+    position: fixed;
+    top: 0;
+    top: 50%;
+    right: unset;
+    left: calc(50% - 464px);
+    z-index: 1000;
+
+    // 左中央固定
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: unset;
+    height: unset;
+    padding: 0 2rem;
+    background-color: unset;
+    transform: translateY(-50%);
   }
 }
 
@@ -34,10 +61,34 @@ body.no-scroll {
   list-style: none;
 }
 
+.nav-menu__cta {
+  @media (width >=1024px) {
+    display: none;
+  }
+}
+
 .nav-menu__anchor {
+  position: relative;
   font-size: 1.5rem;
   color: $color-primary;
   text-decoration: none;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    content: '';
+    background-color: $color-primary;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+      transition: width 0.3s ease;
+    }
+  }
 }
 
 .close-button {
@@ -64,6 +115,10 @@ body.no-scroll {
   cursor: pointer;
   background: none;
   border: none;
+
+  @media (width >=1024px) {
+    display: none;
+  }
 }
 
 .hamburger span {
