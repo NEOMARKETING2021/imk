@@ -11,7 +11,7 @@
     "watch:sass": "sass --no-source-map --watch src/styles/:dist/styles/",
     "eslint": "eslint dist/**/*.js --fix",
     "prettier": "prettier --write dist/**/*.{js,css,html}",
-    "stylelint": "stylelint 'src/**/*.scss' --fix && stylelint 'dist/**/*.css' --fix",
+    "stylelint": "stylelint 'src/**/*.scss' --fix",
     "format": "npm run eslint && npm run prettier && npm run stylelint",
     "prepare": "husky install"
   },
@@ -43,7 +43,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{scss,css}": [
+    "*.scss": [
       "prettier --write",
       "stylelint --fix"
     ],
