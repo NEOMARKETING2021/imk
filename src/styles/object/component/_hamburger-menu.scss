@@ -1,0 +1,67 @@
+/* 基本スタイルは共通部分を維持 */
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease;
+}
+
+.nav-menu.open {
+  right: 0;
+}
+
+.nav-menu ul {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin: 1rem 0;
+}
+
+.nav-menu a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger {
+  position: relative;
+  z-index: 1000; // nav より上
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}

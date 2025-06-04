@@ -47,6 +47,25 @@
     <div class="p-site-wrapper">
       <main class="p-main">
         <header class="p-header">
+          <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-menu" id="navMenu">
+            <button class="close-button" id="closeMenu" aria-label="メニューを閉じる">×</button>
+            <ul>
+              <li><a href="#">ホーム</a></li>
+              <li><a href="#">サービス</a></li>
+              <li><a href="#">会社情報</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- FV -->
+        <section class="p-fv">
           <div class="l-container">
             <h1><img src="https://placehold.co/38x85?text=logo" alt="" style="position: fixed; top: 48px; left: calc(50% - 464px)" /></h1>
             <section class="">
@@ -56,7 +75,7 @@
               </h2>
             </section>
           </div>
-        </header>
+        </section>
         <!-- CONCEPT -->
         <section class="p-concept">
           <div class="l-container">
@@ -189,6 +208,7 @@
         </footer>
       </main>
     </div>
+    <script src="scripts/ui-hamburger.js" type="module"></script>
     <script src="scripts/script.js" type="module"></script>
   </body>
 </html>
