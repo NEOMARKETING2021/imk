@@ -1,0 +1,33 @@
+.p-cta {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  background: #fff url('../images/cta-bg.png') center;
+  background-size: 1024px;
+}
+
+.p-cta__heading {
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.p-cta__buttons {
+  display: grid;
+  gap: 3.2rem;
+  justify-content: center;
+
+  @media (width >=768px) {
+    grid-template-columns: auto auto;
+  }
+}
+
+.p-cta__description {
+  margin-top: 3.2rem;
+  font-size: 1.8rem;
+  line-height: 1.75;
+  text-align: center;
+
+  @media (width >=768px) {
+    font-size: 2.2rem;
+    line-height: 2;
+  }
+}

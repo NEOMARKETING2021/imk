@@ -44,35 +44,34 @@
   </head>
 
   <body>
-    <div class="p-site-wrapper">
+    <div class="">
+      <header class="p-header">
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#" class="nav-menu__anchor">トップ</a></li>
+            <li><a href="#concept" class="nav-menu__anchor">イムクについて</a></li>
+            <li><a href="#points" class="nav-menu__anchor">4つのポイント</a></li>
+            <li><a href="#trouble" class="nav-menu__anchor">お悩み</a></li>
+            <li><a href="#how-to-use" class="nav-menu__anchor">使い方</a></li>
+            <li><a href="#product" class="nav-menu__anchor">商品情報</a></li>
+          </ul>
+          <ul class="nav-menu__cta">
+            <li>
+              <a href="" class="c-button-cta">Amazonで購入する<span class="c-button-cta__arrow"></span></a>
+            </li>
+            <li>
+              <a href="" class="c-button-cta">楽天で購入する<span class="c-button-cta__arrow"></span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main class="p-main">
-        <header class="p-header">
-          <button class="hamburger" id="hamburger" aria-label="メニューを開く">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <nav class="nav-menu" id="navMenu">
-            <ul>
-              <li><a href="#" class="nav-menu__anchor">トップ</a></li>
-              <li><a href="#concept" class="nav-menu__anchor">イムクについて</a></li>
-              <li><a href="#points" class="nav-menu__anchor">4つのポイント</a></li>
-              <li><a href="#trouble" class="nav-menu__anchor">お悩み</a></li>
-              <li><a href="#how-to-use" class="nav-menu__anchor">使い方</a></li>
-              <li><a href="#product" class="nav-menu__anchor">商品情報</a></li>
-            </ul>
-            <ul class="nav-menu__cta">
-              <li>
-                <a href="" class="c-button-cta">Amazonで購入する</a>
-              </li>
-              <li>
-                <a href="" class="c-button-cta">楽天で購入する</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
         <!-- FV -->
         <section class="p-fv">
           <div class="l-container">
@@ -84,7 +83,7 @@
                   <img src="https://placehold.co/669x535?text=FV" alt="" style="margin-left: auto; display: block" />
                 </h2>
               </section>
-              <a href="#cta" class="buy-now">BUY<br />NOW<span class="arrow"></span></a>
+              <a href="#cta" class="buy-now">BUY<br />NOW<span class="buy-now__arrow"></span></a>
             </div>
           </div>
         </section>
@@ -115,15 +114,15 @@
           </div>
         </section>
         <!-- ご購入はこちら -->
-        <section class="p-cta">
+        <section id="cta" class="p-cta">
           <div class="l-container">
-            <h3 class="c-heading-primary c-heading-primary--cta">ご購入はこちら</h3>
-            <ul>
+            <h3 class="c-heading-primary c-heading-primary--cta p-cta__heading">ご購入はこちら</h3>
+            <ul class="p-cta__buttons">
               <li>
-                <a href="" class="c-button-cta">Amazonで購入する</a>
+                <a href="" class="c-button-cta">Amazonで購入する<span class="c-button-cta__arrow"></span></a>
               </li>
               <li>
-                <a href="" class="c-button-cta">楽天で購入する</a>
+                <a href="" class="c-button-cta">楽天で購入する<span class="c-button-cta__arrow"></span></a>
               </li>
             </ul>
           </div>
@@ -145,19 +144,20 @@
         </section>
 
         <!-- ご購入はこちら -->
-        <section class="p-cta bg-amber-100">
+        <section id="cta" class="p-cta">
           <div class="l-container">
-            <h3 class="c-heading-primary c-heading-primary--cta">ご購入はこちら</h3>
-            <ul>
+            <h3 class="c-heading-primary c-heading-primary--cta p-cta__heading">ご購入はこちら</h3>
+            <ul class="p-cta__buttons">
               <li>
-                <a href="" class="c-button-cta">Amazonで購入する</a>
+                <a href="" class="c-button-cta">Amazonで購入する<span class="c-button-cta__arrow"></span></a>
               </li>
               <li>
-                <a href="" class="c-button-cta">楽天で購入する</a>
+                <a href="" class="c-button-cta">楽天で購入する<span class="c-button-cta__arrow"></span></a>
               </li>
             </ul>
           </div>
         </section>
+
         <!-- 使い方 -->
         <section id="how-to-use" class="p-how-to-use">
           <div class="l-container">
@@ -189,42 +189,42 @@
         <!-- ご購入はこちら -->
         <section id="cta" class="p-cta">
           <div class="l-container">
-            <h3 class="c-heading-primary c-heading-primary--cta">ご購入はこちら</h3>
-            <ul>
+            <h3 class="c-heading-primary c-heading-primary--cta p-cta__heading">ご購入はこちら</h3>
+            <ul class="p-cta__buttons">
               <li>
-                <a href="" class="c-button-cta">Amazonで購入する</a>
+                <a href="" class="c-button-cta">Amazonで購入する<span class="c-button-cta__arrow"></span></a>
               </li>
               <li>
-                <a href="" class="c-button-cta">楽天で購入する</a>
+                <a href="" class="c-button-cta">楽天で購入する<span class="c-button-cta__arrow"></span></a>
               </li>
             </ul>
-            <p>全国のLOFT（一部店舗）、全国のPLAZA（一部店舗）にて、<br />店頭販売もしております。</p>
+            <p class="p-cta__description">全国のLOFT（一部店舗）、<br class="tablet:hidden" />全国のPLAZA（一部店舗）にて、<br />店頭販売もしております。</p>
           </div>
         </section>
-        <footer class="p-footer">
-          <div class="l-container">
-            <div class="p-footer__row">
-              <div>
-                <h1><img src="images/logo.svg" alt="" style="" width="91" height="41" class="p-footer__logo" /></h1>
-                <p><small>&copy; 2025 imk</small></p>
-              </div>
-              <div>
-                <ul class="p-footer__buttons">
-                  <li><a href="" class="p-footer__button">Instagram</a></li>
-                  <li><a href="" class="p-footer__button">X</a></li>
-                  <li><a href="" class="p-footer__button">LINE</a></li>
-                  <li><a href="" class="p-footer__button">facebook</a></li>
-                </ul>
-                <ul class="p-footer__text-links">
-                  <li><a href="" class="p-footer__text-link">お問い合わせ</a></li>
-                  <li><a href="" class="p-footer__text-link">会社概要</a></li>
-                  <li><a href="" class="p-footer__text-link">プライバシーポリシー</a></li>
-                </ul>
-              </div>
+      </main>
+      <footer class="p-footer">
+        <div class="l-container">
+          <div class="p-footer__row">
+            <div>
+              <h1><img src="images/logo.svg" alt="" style="" width="91" height="41" class="p-footer__logo" /></h1>
+              <p><small>&copy; 2025 imk</small></p>
+            </div>
+            <div>
+              <ul class="p-footer__buttons">
+                <li><a href="" class="p-footer__button">Instagram</a></li>
+                <li><a href="" class="p-footer__button">X</a></li>
+                <li><a href="" class="p-footer__button">LINE</a></li>
+                <li><a href="" class="p-footer__button">facebook</a></li>
+              </ul>
+              <ul class="p-footer__text-links">
+                <li><a href="" class="p-footer__text-link">お問い合わせ</a></li>
+                <li><a href="" class="p-footer__text-link">会社概要</a></li>
+                <li><a href="" class="p-footer__text-link">プライバシーポリシー</a></li>
+              </ul>
             </div>
           </div>
-        </footer>
-      </main>
+        </div>
+      </footer>
     </div>
     <script type="module" src="scripts/script.js"></script>
   </body>

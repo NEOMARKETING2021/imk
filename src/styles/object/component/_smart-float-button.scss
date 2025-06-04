@@ -44,7 +44,7 @@
 .buy-now {
   position: absolute;
   bottom: -50.45px;
-  z-index: 1000;
+  z-index: 998;
   display: grid;
   grid-template-rows: auto auto;
   gap: 8px;
@@ -86,7 +86,7 @@
   z-index: 0;
 }
 
-.arrow {
+.buy-now__arrow {
   position: relative;
   display: inline-block;
   width: 1px;
@@ -96,8 +96,8 @@
   border-radius: 9999px;
 }
 
-.arrow::before,
-.arrow::after {
+.buy-now__arrow::before,
+.buy-now__arrow::after {
   position: absolute;
   bottom: 0;
   left: calc(50% - 0.5px);
@@ -109,10 +109,10 @@
   transform-origin: 50% calc(100% - 0.5px);
 }
 
-.arrow::before {
+.buy-now__arrow::before {
   transform: rotate(45deg);
 }
 
-.arrow::after {
+.buy-now__arrow::after {
   transform: rotate(-45deg);
 }

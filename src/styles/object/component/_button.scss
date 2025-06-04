@@ -1,4 +1,66 @@
+.c-button-cta__arrow {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  display: inline-block;
+  width: 9px;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 9999px;
+  transform: translateY(-50%);
+}
+
+.c-button-cta__arrow::before,
+.c-button-cta__arrow::after {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  right: 0;
+  width: 6px;
+  height: 1px;
+  content: '';
+  background-color: #fff;
+  border-radius: 9999px;
+  transform-origin: calc(100% - 0.5px) 50%;
+}
+
+.c-button-cta__arrow::before {
+  transform: rotate(45deg);
+}
+
+.c-button-cta__arrow::after {
+  transform: rotate(-45deg);
+}
+
 .c-button-cta {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 27.7rem;
+  height: 7rem;
+  color: #fff;
   background: $color-tertiary;
   border-radius: 9999px;
+
+  &:hover {
+    .c-button-cta__arrow {
+      right: 2.7rem;
+
+      // 無限に動くアニメーションを追加
+      animation: arrow-move 1.8s ease-in-out infinite;
+
+      @keyframes arrow-move {
+        0% {
+          right: 3rem;
+        }
+
+        50% {
+          right: 2.7rem;
+        }
+
+        100% {
+          right: 3rem;
+        }
+      }
+    }
+  }
 }

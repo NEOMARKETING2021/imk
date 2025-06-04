@@ -558,10 +558,6 @@ video {
   position: fixed;
 }
 
-.relative {
-  position: relative;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -576,7 +572,8 @@ video {
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
 }
 
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+@media (min-width: 768px) {
+  .tablet\:hidden {
+    display: none;
+  }
 }
