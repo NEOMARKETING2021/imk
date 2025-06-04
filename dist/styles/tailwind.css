@@ -558,6 +558,10 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;

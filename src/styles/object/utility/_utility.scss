@@ -1,14 +1,3 @@
-.u-scroll-spacing {
-  display: block;
-  height: $heigth-header;
-  margin-top: -$heigth-header;
-
-  @include mq-cdt(tablet) {
-    height: unset;
-    margin-top: unset;
-  }
-}
-
 .is-fixed {
   // position: fixed;
   overflow-y: hidden;

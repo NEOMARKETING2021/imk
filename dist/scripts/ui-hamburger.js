@@ -3,13 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navMenu');
 
   hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-  });
+    const isOpen = navMenu.classList.toggle('open');
 
-  const closeBtn = document.getElementById('closeMenu');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      navMenu.classList.remove('open');
-    });
-  }
+    hamburger.classList.toggle('open'); // ← ハンバーガーの見た目変更
+    navMenu.classList.toggle('open', isOpen); // ← メニューの表示切替
+
+    document.body.classList.toggle('no-scroll', isOpen);
+  });
 });

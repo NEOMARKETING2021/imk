@@ -6,7 +6,6 @@
 
 @import 'foundation/variables';
 @import 'foundation/function';
-@import 'foundation/mixin';
 @import 'foundation/base';
 
 // ==========================================================================
@@ -24,7 +23,6 @@
 // -----------------------------------------------------------------
 
 @import 'object/component/button';
-@import 'object/component/cta';
 @import 'object/component/hamburger-menu';
 @import 'object/component/heading';
 
@@ -34,7 +32,6 @@
 
 @import 'object/project/footer';
 @import 'object/project/loading';
-@import 'object/project/masthead';
 @import 'object/project/project';
 
 // -----------------------------------------------------------------

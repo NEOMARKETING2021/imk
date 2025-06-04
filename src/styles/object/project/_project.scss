@@ -10,47 +10,9 @@
   // proparty: value;
 }
 
-.p-logo {
-  max-width: (320px * 0.48);
-  margin-right: auto;
-  margin-left: auto;
-
-  @include mq-cdt(mobile-m) {
-    max-width: (320px * 0.56);
-  }
-
-  @include mq-cdt(tablet) {
-    // max-width: (320px * 0.7);
-  }
-
-  @include mq-cdt(laptop) {
-    max-width: (320px * 0.7);
-  }
-}
-
-.p-light-logo {
-  max-width: (509px * 0.48);
-  margin-right: auto;
-  margin-left: auto;
-
-  @include mq-cdt(mobile-m) {
-    max-width: (509px * 0.56);
-  }
-
-  @include mq-cdt(tablet) {
-    // max-width: (509px * 0.7);
-  }
-
-  @include mq-cdt(laptop) {
-    max-width: (509px * 0.7);
-  }
-}
-
 .p-header {
   position: relative;
   padding: 1rem;
-  color: white;
-  background: #333;
 }
 
 .p-fv {
@@ -72,11 +34,6 @@
 .p-cta {
   background: $color-quaternary url('../images/cta-bg.png') center;
   background-size: 1024px;
-
-  .p-cta__button {
-    background: $color-tertiary;
-    border-radius: 9999px;
-  }
 }
 
 .p-trouble {
