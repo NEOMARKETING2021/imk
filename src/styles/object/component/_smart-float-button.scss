@@ -1,0 +1,35 @@
+.kv {
+  position: relative;
+
+  // height: 100vh; // KVの高さ（例）
+  background: green;
+}
+
+.buy-now {
+  position: absolute;
+  bottom: -20px;
+
+  // right: 50%;
+  // margin-right: -454px; // Adjust based on button width
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  padding: 0 12px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #f00;
+  border: none;
+  border-radius: 9999px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.buy-now.fixed {
+  position: fixed;
+  top: 80px;
+  bottom: unset;
+
+  // right: calc(50% - 464px);
+  // right: 50%;
+}
