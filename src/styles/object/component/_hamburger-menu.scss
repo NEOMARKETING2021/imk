@@ -73,20 +73,22 @@ body.no-scroll {
   color: $color-primary;
   text-decoration: none;
 
-  &::after {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    content: '';
-    background-color: $color-primary;
-  }
-
-  &:hover {
+  @media (width >=1024px) {
     &::after {
-      width: 100%;
-      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      content: '';
+      background-color: $color-primary;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        transition: width 0.3s ease;
+      }
     }
   }
 }

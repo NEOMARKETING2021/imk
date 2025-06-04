@@ -7,8 +7,13 @@
 .l-container {
   width: 100%;
   max-width: 102.4rem;
-  padding-right: 5.8rem;
-  padding-left: 5.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   margin-right: auto;
   margin-left: auto;
+
+  @media (width >=768px) {
+    padding-right: 5.8rem;
+    padding-left: 5.8rem;
+  }
 }
