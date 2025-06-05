@@ -1,10 +1,10 @@
 export default function initSmartFloatButton() {
   document.addEventListener('DOMContentLoaded', () => {
     const btn = document.querySelector('.buy-now');
-    const kv = document.querySelector('.kv'); // もしくは querySelector('.kv')
+    const mv = document.querySelector('.p-mv');
     let lastScrollY = window.scrollY;
-    // kv の半分の幅
-    const btnMraginRight = -kv.offsetWidth / 2 + 20; // 20px は調整用のマージン
+    // mv の半分の幅
+    const btnMraginRight = -mv.offsetWidth / 2 + 20; // 20px は調整用のマージン
 
     btn.style.right = '50%';
     btn.style.marginRight = `${btnMraginRight}px`;
@@ -16,9 +16,9 @@ export default function initSmartFloatButton() {
 
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
-      const kvBottom = kv.offsetTop + kv.offsetHeight;
+      const kvBottom = mv.offsetTop + mv.offsetHeight;
 
-      // 「kvの下端 - 100px」をトリガーにする
+      // 「mvの下端 - 100px」をトリガーにする
       const triggerPoint = kvBottom - 100;
 
       if (currentScrollY > lastScrollY && currentScrollY > triggerPoint) {

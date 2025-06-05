@@ -1,0 +1,30 @@
+.p-damage-solution {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  text-align: center;
+  background: $color-quinary;
+}
+
+.p-damage-solution__ico {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-damage-solution__catch {
+  margin-top: 1rem;
+}
+
+.p-damage-solution__heading {
+  sup {
+    top: -1em;
+    font-size: 50%;
+  }
+
+  rt {
+    font-size: 1rem;
+  }
+}
+
+.p-damage-solution__note {
+  margin-top: 2rem;
+}
