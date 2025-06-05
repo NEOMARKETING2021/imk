@@ -19,5 +19,7 @@
 }
 
 .l-container-setback {
-  margin-left: 17.2rem;
+  @media (width >=1024px) {
+    margin-left: 17.2rem;
+  }
 }

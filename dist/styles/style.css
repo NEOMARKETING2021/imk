@@ -45,8 +45,10 @@ body {
   }
 }
 
-.l-container-setback {
-  margin-left: 17.2rem;
+@media (width >= 1024px) {
+  .l-container-setback {
+    margin-left: 17.2rem;
+  }
 }
 
 .c-button-cta__arrow {
@@ -296,15 +298,26 @@ body.no-scroll {
   font-size: 1.4rem;
   line-height: 1;
   color: #efece6;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(-3rem);
   transform-origin: left bottom;
-  text-orientation: upright;
+  text-orientation: upleft;
 }
 
 .c-heading-secondary {
   font-family: var(--font-mincho);
   font-size: 3rem;
   color: #ae8e4c;
+}
+.c-heading-secondary sup {
+  font-size: 50%;
+  top: -1em;
+}
+
+.c-heading-secondary-note {
+  color: #bdb4b4;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 @keyframes fluidrotate {
@@ -382,7 +395,7 @@ body.no-scroll {
   position: fixed;
   top: 50.45px;
   bottom: unset;
-  z-index: 0;
+  z-index: 1;
 }
 
 .buy-now__arrow {
@@ -622,4 +635,80 @@ body.no-scroll {
 
 .p-how-to-use {
   background-color: #fff;
+}
+
+.p-product {
+  margin-top: 19.4rem;
+  padding-bottom: 10.2rem;
+}
+
+.p-product__heading-secondary {
+  text-align: center;
+}
+
+.p-product__spec {
+  display: grid;
+  color: #484041;
+  margin-top: 5.6rem;
+}
+@media (width >= 768px) {
+  .p-product__spec {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (width >= 768px) {
+  .p-product__spec-label,
+  .p-product__spec-data {
+    padding: 2.4rem 0;
+    border-top: 1px solid #efece6;
+  }
+}
+
+.p-product__spec-label {
+  padding-right: 1.6rem;
+  padding-top: 2.4rem;
+  color: #e8e2d5;
+  font-size: 1.4rem;
+  border-top: 1px solid #efece6;
+}
+@media (width >= 768px) {
+  .p-product__spec-label {
+    width: 12rem;
+  }
+}
+
+.p-product__spec-data {
+  padding-bottom: 2.4rem;
+  margin-top: 1.2rem;
+}
+@media (width >= 768px) {
+  .p-product__spec-data {
+    margin-top: unset;
+  }
+}
+.p-product__spec-data sup {
+  font-size: 50%;
+  top: -1em;
+}
+
+.p-product__spec-note {
+  margin-top: 1.2rem;
+  color: #bdb4b4;
+  font-size: 1.2rem;
+}
+
+.p-product__spec-sublabel {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.p-product__spec-subdata {
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.5714285714;
+}
+
+.p-product__image {
+  margin-top: 5.6rem;
 }

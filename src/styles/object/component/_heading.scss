@@ -15,15 +15,31 @@
   font-size: 1.4rem;
   line-height: 1;
   color: $color-quaternary;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(-3rem);
   transform-origin: left bottom;
-  text-orientation: upright;
+  text-orientation: upleft;
 }
 
 .c-heading-secondary {
   font-family: var(--font-mincho);
   font-size: 3rem;
   color: $color-secondary;
+
+  @media (width >=768px) {
+    // font-size: 3rem;
+  }
+
+  sup {
+    top: -1em;
+    font-size: 50%;
+  }
+}
+
+.c-heading-secondary-note {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: $color-septenary;
+  text-align: center;
 }
 
 // .c-heading {
