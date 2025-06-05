@@ -120,14 +120,17 @@ body.no-scroll {
   right: -100%;
   z-index: 999;
   display: flex;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 4.2rem;
+  place-content: center center;
   align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: #fff;
   transition: right 0.3s ease;
 }
-.nav-menu li {
+.nav-menu .nav-menu-list {
   margin: 1rem 0;
   text-align: left;
   opacity: 0;
@@ -135,7 +138,7 @@ body.no-scroll {
   transform: translateX(30px);
 }
 @media (width >= 1024px) {
-  .nav-menu li {
+  .nav-menu .nav-menu-list {
     opacity: 1;
     transform: unset;
   }
@@ -172,6 +175,11 @@ body.no-scroll {
   list-style: none;
 }
 
+.nav-menu__cta {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1.2rem;
+}
 @media (width >= 1024px) {
   .nav-menu__cta {
     display: none;
@@ -309,15 +317,15 @@ body.no-scroll {
   color: #ae8e4c;
 }
 .c-heading-secondary sup {
-  font-size: 50%;
   top: -1em;
+  font-size: 50%;
 }
 
 .c-heading-secondary-note {
-  color: #bdb4b4;
-  font-size: 1.2rem;
-  text-align: center;
   margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #bdb4b4;
+  text-align: center;
 }
 
 @keyframes fluidrotate {
@@ -638,8 +646,8 @@ body.no-scroll {
 }
 
 .p-product {
-  margin-top: 19.4rem;
   padding-bottom: 10.2rem;
+  margin-top: 19.4rem;
 }
 
 .p-product__heading-secondary {
@@ -648,8 +656,8 @@ body.no-scroll {
 
 .p-product__spec {
   display: grid;
-  color: #484041;
   margin-top: 5.6rem;
+  color: #484041;
 }
 @media (width >= 768px) {
   .p-product__spec {
@@ -666,10 +674,10 @@ body.no-scroll {
 }
 
 .p-product__spec-label {
-  padding-right: 1.6rem;
   padding-top: 2.4rem;
-  color: #e8e2d5;
+  padding-right: 1.6rem;
   font-size: 1.4rem;
+  color: #e8e2d5;
   border-top: 1px solid #efece6;
 }
 @media (width >= 768px) {
@@ -688,14 +696,14 @@ body.no-scroll {
   }
 }
 .p-product__spec-data sup {
-  font-size: 50%;
   top: -1em;
+  font-size: 50%;
 }
 
 .p-product__spec-note {
   margin-top: 1.2rem;
-  color: #bdb4b4;
   font-size: 1.2rem;
+  color: #bdb4b4;
 }
 
 .p-product__spec-sublabel {
