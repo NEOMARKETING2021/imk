@@ -44,6 +44,11 @@ body {
     padding-left: 5.8rem;
   }
 }
+@media (width >= 768px) {
+  .l-container.l-container--no-pr {
+    padding-right: unset;
+  }
+}
 
 @media (width >= 1024px) {
   .l-container-setback {
@@ -329,7 +334,7 @@ body.no-scroll {
 .c-heading-secondary-note {
   margin-top: 2rem;
   font-size: 1.2rem;
-  color: #bdb4b4;
+  color: #efece6;
   text-align: center;
 }
 
@@ -622,6 +627,95 @@ body.no-scroll {
   opacity: 0;
 }
 
+.p-points {
+  margin-top: 6.4rem;
+  padding-bottom: 10.8rem;
+  background: #fff;
+}
+
+.p-points__card {
+  display: grid;
+  margin-top: 4.8rem;
+}
+@media (width >= 768px) {
+  .p-points__card {
+    border-top: 1px solid #efece6;
+    gap: 6.4rem;
+    grid-template-columns: 28rem 1fr;
+  }
+}
+
+.p-points__card-img-container {
+  margin-right: -3rem;
+  margin-left: -3rem;
+}
+@media (width >= 768px) {
+  .p-points__card-img-container {
+    margin-right: unset;
+    margin-left: unset;
+  }
+}
+
+.p-points__card-img {
+  aspect-ratio: 363/280;
+  object-fit: cover;
+  width: 100%;
+}
+
+.p-points__card-text-area {
+  padding-top: 2.8rem;
+}
+
+.p-points__card-num {
+  color: #e8e2d5;
+  font-size: 1.4rem;
+}
+
+.p-points__card-lead {
+  margin-top: 2.4rem;
+  color: #736869;
+  font-size: 2.4rem;
+  font-family: var(--font-mincho);
+  line-height: 1.4;
+}
+@media (width >= 768px) {
+  .p-points__card-lead {
+    font-size: 3rem;
+  }
+}
+.p-points__card-lead sup {
+  top: -1em;
+  font-size: 50%;
+}
+
+.p-points__card-description {
+  margin-top: 2.3rem;
+  color: #736869;
+  font-size: 1.4rem;
+  font-family: var(--font-mincho);
+  line-height: 2.1428571429;
+}
+
+.p-points__card-note {
+  margin-top: 3.4rem;
+  margin-left: 1.8em;
+  color: #bdb4b4;
+  text-indent: -1.8em;
+  font-size: 1.2rem;
+  line-height: 1.6666666667;
+}
+.p-points__card-note.p-points__card-note--label {
+  line-height: 2.3;
+}
+
+.p-points__card-note-label {
+  margin-right: 8px;
+  padding: 0 0.4rem;
+  border: 1px solid #efece6;
+  white-space: nowrap;
+  line-height: 2rem;
+}
+
 .p-fv {
   background: #fff;
 }
@@ -632,10 +726,6 @@ body.no-scroll {
 
 .p-damage-solution {
   background: #f8f7f3;
-}
-
-.p-points {
-  background: #fff;
 }
 
 .p-trouble {
@@ -708,7 +798,7 @@ body.no-scroll {
 .p-product__spec-note {
   margin-top: 1.2rem;
   font-size: 1.2rem;
-  color: #bdb4b4;
+  color: #efece6;
 }
 
 .p-product__spec-sublabel {
