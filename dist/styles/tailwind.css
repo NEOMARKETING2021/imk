@@ -572,6 +572,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .tablet\:relative {
+    position: relative;
+  }
+
   .tablet\:hidden {
     display: none;
   }
