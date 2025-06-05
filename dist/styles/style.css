@@ -436,7 +436,7 @@ body.no-scroll {
   bottom: 0;
   left: calc(50% - 0.5px);
   width: 1px;
-  height: 6px;
+  height: 0.6rem;
   content: '';
   background-color: #fff;
   border-radius: 9999px;
@@ -449,6 +449,69 @@ body.no-scroll {
 
 .buy-now__arrow::after {
   transform: rotate(-45deg);
+}
+
+.p-concept {
+  background: #fff;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+}
+
+.p-concept__image-container {
+  width: 31.3rem;
+  height: 32.8rem;
+  margin-right: -3rem;
+  position: relative;
+  margin-top: 4.4rem;
+}
+@media (width >= 768px) {
+  .p-concept__image-container {
+    position: absolute;
+    margin-right: unset;
+    top: 0;
+    right: 0;
+    width: 38.5rem;
+    height: 40.3rem;
+    margin-top: unset;
+  }
+}
+
+.p-concept__image-item,
+.p-concept__image-img {
+  position: absolute;
+}
+
+.p-concept__image-img {
+  width: 28.3rem;
+  top: 0;
+  right: 0;
+}
+@media (width >= 768px) {
+  .p-concept__image-img {
+    width: 34.8rem;
+  }
+}
+
+.p-concept__image-item {
+  width: 5.7rem;
+  bottom: 0;
+  left: 0;
+}
+@media (width >= 768px) {
+  .p-concept__image-item {
+    width: 7rem;
+  }
+}
+
+.p-concept__heading {
+  margin-bottom: 5.4rem;
+}
+
+.p-concept__paragraph {
+  font-family: var(--font-mincho);
+  margin-top: 2em;
+  font-size: 1.4rem;
+  line-height: 2.1428571429;
 }
 
 .p-cta {
@@ -488,15 +551,15 @@ body.no-scroll {
 }
 
 .p-damage-solution {
-  background: #f8f7f3;
-  text-align: center;
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  text-align: center;
+  background: #f8f7f3;
 }
 
 .p-damage-solution__ico {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .p-damage-solution__catch {
@@ -611,7 +674,7 @@ body.no-scroll {
 .loader {
   position: relative;
   margin: auto;
-  font-size: 10px;
+  font-size: 1rem;
   color: #fff;
   text-indent: -9999em;
   transform: translateZ(0);
@@ -691,8 +754,8 @@ body.no-scroll {
 .p-points__card-img {
   width: 100%;
   aspect-ratio: 363/280;
-  object-fit: cover;
   margin-top: unset;
+  object-fit: cover;
 }
 @media (width >= 768px) {
   .p-points__card-img {
@@ -748,17 +811,13 @@ body.no-scroll {
 
 .p-points__card-note-label {
   padding: 0 0.4rem;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   line-height: 2rem;
   white-space: nowrap;
   border: 1px solid #efece6;
 }
 
 .p-fv {
-  background: #fff;
-}
-
-.p-concept {
   background: #fff;
 }
 
