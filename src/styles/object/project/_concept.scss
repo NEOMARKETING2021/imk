@@ -1,11 +1,8 @@
 .p-concept {
   position: relative;
   padding-top: 12rem;
-  padding-bottom: calc(32.8rem + 4.4rem + 10rem);
   padding-bottom: calc(32.8rem + 10rem);
   overflow: hidden;
-
-  // padding-bottom: 10rem;
   background: #fff;
 
   @media (width >=768px) {
@@ -14,11 +11,7 @@
 }
 
 .p-concept__image-container {
-  position: relative;
   position: absolute;
-
-  // margin-top: 4.4rem;
-  // margin-right: -3rem;
   right: 0;
   bottom: 4.4rem;
   width: 31.3rem;
@@ -30,8 +23,6 @@
     width: 38.5rem;
     height: 40.3rem;
     margin-top: unset;
-
-    // margin-right: unset;
   }
 }
 

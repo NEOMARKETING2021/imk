@@ -76,7 +76,7 @@
         <section class="p-fv">
           <div class="l-container">
             <div class="p-mv">
-              <h1><img src="images/logo.svg" alt="" style="position: fixed; top: 48px; left: calc(50% - 464px)" width="38" height="85" /></h1>
+              <h1><img src="images/logo.svg" alt="" style="position: fixed; top: 48px; left: calc(50% - 464px); z-index: 1" width="38" height="85" /></h1>
 
               <section class="">
                 <p>おかえり、<br />すなおな私</p>
@@ -209,7 +209,12 @@
         <section id="trouble" class="p-trouble">
           <div class="l-container">
             <div class="l-container-setback">
-              <h3>こんな髪のお悩みありませんか？</h3>
+              <div class="">
+                <p class="c-heading-primary-sub">TROUBLE</p>
+                <h3 class="c-heading-primary">こんな髪のお悩みありませんか？</h3>
+              </div>
+              ヘアケア選びに 悩み続けている人は 約88% 回答者数：9150、条件：20～50代女性 2024年10月 ネオマーケティング調べ
+              <img src="images/trouble-graph.png" alt="円グラフ :ヘアケア選びに悩み続けている人は約88%" width="444" height="444" />
             </div>
           </div>
         </section>
@@ -217,8 +222,15 @@
         <!-- カラー、パーマ、紫外線、スタイリング剤などで蓄積したダメージを ヘアパックやトリートメントだけで、 解決しようとしていませんか？ -->
         <section class="p-damage-awareness">
           <div class="l-container">
-            <p>カラー、パーマ、紫外線、スタイリング剤などで蓄積したダメージを ヘアパックやトリートメントだけで、 解決しようとしていませんか？</p>
-            <img src="https://placehold.co/499x466?text=figure" alt="" class="block mx-auto" />
+            <p class="p-damage-awareness__lead">
+              カラー、パーマ、紫外線、<br class="tablet:hidden" />スタイリング剤などで<br class="mobile-l:hidden" />蓄積したダメージを<br /><span class="p-damage-awareness__strong"
+                >ヘアパックや<br class="tablet:hidden" />トリートメントだけで、</span
+              ><br /><span class="p-damage-awareness__strong">解決しようと<br class="mobile-l:hidden" />していませんか？</span>
+            </p>
+            <div class="p-damage-awareness__figure">
+              <p class="p-damage-awareness__figure-text">特に傷んだ髪へ</p>
+              <img src="images/damage-awareness-figure.png" alt="" class="block mx-auto" width="998" height="932" />
+            </div>
           </div>
         </section>
 
