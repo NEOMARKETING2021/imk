@@ -220,13 +220,13 @@
               </div>
 
               <ul class="p-trouble__list">
-                <li class="p-trouble__item">色々なヘアパックやトリートメントを使ったけどなかなかしっくりこない。</li>
-                <li class="p-trouble__item">何をしても、理想の髪の毛にならない。</li>
-                <li class="p-trouble__item">トリートメントで一時的にきれいになっても、すぐに髪がきしんでしまう。</li>
-                <li class="p-trouble__item">髪のダメージが蓄積しすぎて、きれいになることをあきらめている。</li>
+                <li class="p-trouble__item gsap-fadein">色々なヘアパックやトリートメントを使ったけどなかなかしっくりこない。</li>
+                <li class="p-trouble__item gsap-fadein">何をしても、理想の髪の毛にならない。</li>
+                <li class="p-trouble__item gsap-fadein">トリートメントで一時的にきれいになっても、すぐに髪がきしんでしまう。</li>
+                <li class="p-trouble__item gsap-fadein">髪のダメージが蓄積しすぎて、きれいになることをあきらめている。</li>
               </ul>
 
-              <div class="p-trouble__research">
+              <div class="p-trouble__research gsap-fadein">
                 <div class="p-trouble__research-grid">
                   <div class="p-trouble__graph">
                     <img src="images/trouble-graph.png" alt="円グラフ :ヘアケア選びに悩み続けている人は約88%" width="444" height="444" />
@@ -244,20 +244,75 @@
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- カラー、パーマ、紫外線、スタイリング剤などで蓄積したダメージを ヘアパックやトリートメントだけで、 解決しようとしていませんか？ -->
-        <section class="p-damage-awareness">
-          <div class="l-container">
-            <p class="p-damage-awareness__lead">
-              カラー、パーマ、紫外線、<br class="tablet:hidden" />スタイリング剤などで<br class="mobile-l:hidden" />蓄積したダメージを<br /><span class="p-damage-awareness__strong"
-                >ヘアパックや<br class="tablet:hidden" />トリートメントだけで、</span
-              ><br /><span class="p-damage-awareness__strong">解決しようと<br class="mobile-l:hidden" />していませんか？</span>
-            </p>
-            <div class="p-damage-awareness__figure">
-              <p class="p-damage-awareness__figure-text">特に傷んだ髪へ</p>
-              <img src="images/damage-awareness-figure.png" alt="" class="block mx-auto" width="998" height="932" />
+          <!-- カラー、パーマ、紫外線、スタイリング剤などで蓄積したダメージを ヘアパックやトリートメントだけで、 解決しようとしていませんか？ -->
+          <div class="p-damage-awareness">
+            <div class="l-container">
+              <p class="p-damage-awareness__lead">
+                カラー、パーマ、紫外線、<br class="tablet:hidden" />スタイリング剤などで<br class="mobile-l:hidden" />蓄積したダメージを<br /><span class="p-damage-awareness__strong"
+                  >ヘアパックや<br class="tablet:hidden" />トリートメントだけで、</span
+                ><br /><span class="p-damage-awareness__strong">解決しようと<br class="mobile-l:hidden" />していませんか？</span>
+              </p>
+              <div class="p-damage-awareness__figure gsap-fadein">
+                <p class="p-damage-awareness__figure-text">特に傷んだ髪へ</p>
+                <img src="images/damage-awareness-figure.png" alt="" class="block mx-auto" width="998" height="932" />
+              </div>
             </div>
+          </div>
+          <!-- imkのピーリング※1ヘアマスクで正しいケアをはじめましょう。 -->
+          <div class="p-careflow">
+            <div class="p-careflow__intro">
+              <p class="p-careflow__text">imkのピーリング<sup>※1</sup>ヘアマスクで<br />正しいケアをはじめましょう。</p>
+              <p class="p-careflow__note">※1 髪表面に付着した汚れを洗い流すことによる</p>
+            </div>
+
+            <ul class="p-careflow__columns">
+              <li class="p-careflow__column">
+                <h4 class="p-careflow__heading">髪のダメージ</h4>
+                <ul class="p-careflow__list">
+                  <li class="p-careflow__item">
+                    <p class="p-careflow__step">01</p>
+                    <img src="images/careflow-icon-1.svg" alt="" width="29" height="29" class="p-careflow__icon" />
+                    <p class="p-careflow__description">キューティクルの損傷</p>
+                  </li>
+                  <li class="p-careflow__item">
+                    <p class="p-careflow__step">02</p>
+                    <img src="images/careflow-icon-2.svg" alt="" width="29" height="29" class="p-careflow__icon" />
+                    <p class="p-careflow__description">指通りの悪化</p>
+                  </li>
+                  <li class="p-careflow__item">
+                    <p class="p-careflow__step">03</p>
+                    <img src="images/careflow-icon-3.svg" alt="" width="29" height="29" class="p-careflow__icon" />
+
+                    <p class="p-careflow__description">汚れの蓄積</p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="p-careflow__column">
+                <h4 class="p-careflow__heading">これからの正しいケア</h4>
+                <ul class="p-careflow__list">
+                  <li class="p-careflow__item">
+                    <p class="p-careflow__step">01</p>
+                    <p class="p-careflow__description">ピーリング<sup>※1</sup>ヘアマスクimkを使ったヘアケア</p>
+                    <p class="p-careflow__note">※1 髪表面に付着した汚れを洗い流すことによる</p>
+                  </li>
+                  <li class="p-careflow__item">
+                    <p class="p-careflow__step">02</p>
+                    <p class="p-careflow__description">シャンプーでは落とし切れない汚れを<br />しっかりオフ</p>
+                  </li>
+                  <li class="p-careflow__item">
+                    <p class="p-careflow__step">03</p>
+                    <p class="p-careflow__description">キューティクルの表面をなめらかに整え<br />潤いをプラス</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <p class="p-careflow__conclusion">
+              髪の表面をなめらかに整え、<br />
+              次のトリートメントがなじみやすくなる。<br />
+              指通りの良い美しい髪に導きます。
+            </p>
           </div>
         </section>
 
