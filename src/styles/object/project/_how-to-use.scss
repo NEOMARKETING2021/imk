@@ -1,0 +1,112 @@
+.p-how-to-use {
+  padding-top: 6.4rem;
+  background-color: #fff;
+
+  @media (width >=768px) {
+    padding-top: 15.2rem;
+  }
+}
+
+.p-how-to-use__steps {
+  display: grid;
+  gap: 7.8rem;
+  margin-top: 9rem;
+
+  @media (width >=768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.p-how-to-use__step {
+  padding-top: 3rem;
+  border-top: 1px solid $color-quaternary;
+
+  &.p-how-to-use__step--plus {
+    margin-top: 4rem;
+    margin-bottom: 5.6rem;
+  }
+}
+
+.p-how-to-use__step-label {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  color: $color-octonary;
+}
+
+.p-how-to-use__step-description {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  line-height: math.div(30, 14);
+}
+
+.p-how-to-use__step-note {
+  font-size: 1.2rem;
+  line-height: math.div(22, 12);
+  color: $color-septenary;
+}
+
+.p-how-to-use__step-illust {
+  max-width: 15.4rem;
+  margin-top: 2.4rem;
+}
+
+.p-how-to-use-amount {
+  padding-top: 3.6rem;
+  padding-bottom: 6.4rem;
+  color: $color-primary;
+  border: 1px dashed $color-primary;
+}
+
+.p-how-to-use-amount__title {
+  font-family: var(--font-mincho);
+  font-size: 3rem;
+  line-height: math.div(42, 30);
+  text-align: center;
+}
+
+.p-how-to-use-amount__list {
+  display: grid;
+  gap: 4.8rem;
+  justify-content: center;
+  margin-top: 1.9rem;
+  text-align: center;
+
+  @media (width >=768px) {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.p-how-to-use-amount__item {
+  // propartie : value;
+}
+
+.p-how-to-use-amount__hairtype {
+  font-family: var(--font-mincho);
+  font-size: 2.2rem;
+}
+
+.p-how-to-use-amount__volume {
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  line-height: math.div(30, 14);
+}
+
+.p-how-to-use-amount__image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  &.p-how-to-use-amount__image--1 {
+    max-width: 68.5px;
+  }
+
+  &.p-how-to-use-amount__image--2 {
+    max-width: 109.5px;
+  }
+
+  &.p-how-to-use-amount__image--3 {
+    max-width: 233.5px;
+  }
+}

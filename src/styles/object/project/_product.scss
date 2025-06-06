@@ -1,6 +1,10 @@
 .p-product {
   padding-bottom: 10.2rem;
-  margin-top: 19.4rem;
+  margin-top: 6.4em;
+
+  @media (width >=768px) {
+    margin-top: 19.4rem;
+  }
 }
 
 .p-product__heading-secondary {
@@ -22,7 +26,7 @@
 .p-product__spec-data {
   @media (width >=768px) {
     padding: 2.4rem 0;
-    border-top: 1px solid #efece6;
+    border-top: 1px solid $color-quaternary;
   }
 }
 
@@ -31,7 +35,7 @@
   padding-right: 1.6rem;
   font-size: 1.4rem;
   color: $color-octonary;
-  border-top: 1px solid #efece6;
+  border-top: 1px solid $color-quaternary;
 
   @media (width >=768px) {
     width: 12rem;
@@ -44,6 +48,11 @@
 
   @media (width >=768px) {
     margin-top: unset;
+  }
+
+  // 最後の行の下線を消す
+  &:last-child {
+    padding-bottom: unset;
   }
 
   sup {
