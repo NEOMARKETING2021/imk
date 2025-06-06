@@ -7,7 +7,6 @@ body.no-scroll {
   top: 0;
   right: -100%;
   z-index: 999;
-  display: flex;
   display: grid;
   grid-template-rows: auto auto;
   gap: 4.2rem;
@@ -17,6 +16,24 @@ body.no-scroll {
   height: 100%;
   background-color: #fff;
   transition: right 0.3s ease;
+
+  @media (width >=1024px) {
+    position: fixed;
+    top: 0;
+    top: 50%;
+    right: unset;
+    left: calc(50% - 464px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    transform: translateY(-50%);
+  }
 
   .nav-menu-lists {
     display: flex;
@@ -35,28 +52,6 @@ body.no-scroll {
       opacity: 1;
       transform: unset;
     }
-  }
-
-  @media (width >=1024px) {
-    position: unset;
-    position: fixed;
-    top: 0;
-    top: 50%;
-    right: unset;
-    left: calc(50% - 464px);
-    z-index: 1000;
-
-    // 左中央固定
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-    justify-content: flex-start;
-    width: unset;
-    height: unset;
-    padding: 0 2rem;
-    background-color: unset;
-    transform: translateY(-50%);
   }
 }
 
