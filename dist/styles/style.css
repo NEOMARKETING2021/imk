@@ -1006,20 +1006,20 @@ body.no-scroll {
 }
 
 .p-careflow__columns {
+  display: grid;
+  gap: 5.6rem;
   max-width: 67.5rem;
   margin: 0 auto;
   margin-top: 3.8rem;
-  display: grid;
-  gap: 5.6rem;
 }
 
 .p-careflow__heading {
-  background-color: #f8f8f8;
-  color: #736869;
-  height: 4.2rem;
   display: grid;
   align-items: center;
+  height: 4.2rem;
   font-size: 1.4rem;
+  color: #736869;
+  background-color: #f8f8f8;
 }
 
 .p-careflow__list {
@@ -1030,22 +1030,21 @@ body.no-scroll {
 }
 
 .p-careflow__item {
-  border: 1px solid #484041;
-  padding: 2.4rem 1.6rem;
   position: relative;
   display: grid;
+  gap: 1.6rem;
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
-  position: relative;
+  padding: 2.4rem 1.6rem;
+  border: 1px solid #484041;
 }
 .p-careflow__item::after {
-  content: '';
   position: absolute;
+  top: 2.4rem;
   right: -3.2rem;
   width: 3.2rem;
-  top: 2.4rem;
   height: 0;
+  content: '';
   border-bottom: 1px dashed #484041;
 }
 .p-careflow__item:last-child::after {
@@ -1064,8 +1063,8 @@ body.no-scroll {
 }
 
 .p-careflow__description {
-  font-size: 1.6rem;
   font-family: var(--font-mincho);
+  font-size: 1.6rem;
 }
 
 .p-points {
