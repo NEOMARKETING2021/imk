@@ -19,20 +19,23 @@ body.no-scroll {
 
   @media (width >=1024px) {
     position: fixed;
-    top: 0;
-    top: 50%;
+
+    // top: 50%;
+    top: 37.8rem;
     right: unset;
-    left: calc(50% - 464px);
+    left: calc(50% - 46.4rem);
     z-index: 1000;
     display: flex;
     flex-direction: row;
+
+    // transform: translateY(-50%);
+
     gap: 2rem;
     align-items: center;
     justify-content: flex-start;
     width: unset;
     height: unset;
     background-color: unset;
-    transform: translateY(-50%);
   }
 
   .nav-menu-list {

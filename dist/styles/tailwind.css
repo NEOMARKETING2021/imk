@@ -582,3 +582,9 @@ video {
     display: none;
   }
 }
+
+@media (min-width: 1024px) {
+  .laptop\:relative {
+    position: relative;
+  }
+}

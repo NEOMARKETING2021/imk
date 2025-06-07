@@ -12,15 +12,9 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media (width >=768px) {
+  @media (width >=1024px) {
     padding-right: 5.8rem;
     padding-left: 5.8rem;
-  }
-
-  &.l-container--no-pr {
-    @media (width >=768px) {
-      padding-right: unset;
-    }
   }
 }
 
