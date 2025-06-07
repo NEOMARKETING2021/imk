@@ -1,5 +1,6 @@
 .p-careflow {
-  // property: value;
+  padding-top: 10.8rem;
+  text-align: center;
 }
 
 .p-careflow__intro {
@@ -11,7 +12,11 @@
 }
 
 .p-careflow__columns {
-  // property: value;
+  display: grid;
+  gap: 5.6rem;
+  max-width: 67.5rem;
+  margin: 0 auto;
+  margin-top: 3.8rem;
 }
 
 .p-careflow__column {
@@ -19,27 +24,59 @@
 }
 
 .p-careflow__heading {
-  // property: value;
+  display: grid;
+  align-items: center;
+  height: 4.2rem;
+  font-size: 1.4rem;
+  color: $color-primary;
+  background-color: #f8f8f8;
 }
 
 .p-careflow__list {
-  // property: value;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin-top: 2.4rem;
 }
 
 .p-careflow__item {
-  // property: value;
+  position: relative;
+  display: grid;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 1.6rem;
+  border: 1px solid $color-senary;
+
+  &::after {
+    position: absolute;
+    top: 2.4rem;
+    right: -3.2rem;
+    width: 3.2rem;
+    height: 0;
+    content: '';
+    border-bottom: 1px dashed $color-senary;
+  }
+
+  &:last-child::after {
+    content: none;
+  }
 }
 
 .p-careflow__step {
-  // property: value;
+  position: absolute;
+  top: 2.4rem;
+  left: 1.6rem;
+  color: $color-octonary;
 }
 
 .p-careflow__icon {
-  // property: value;
+  margin: auto;
 }
 
 .p-careflow__description {
-  // property: value;
+  font-family: var(--font-mincho);
+  font-size: 1.6rem;
 }
 
 .p-careflow__note {

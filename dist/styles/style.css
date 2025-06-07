@@ -1000,6 +1000,74 @@ body.no-scroll {
   max-width: 66.9rem;
   margin-left: auto;
 }
+.p-careflow {
+  padding-top: 10.8rem;
+  text-align: center;
+}
+
+.p-careflow__columns {
+  max-width: 67.5rem;
+  margin: 0 auto;
+  margin-top: 3.8rem;
+  display: grid;
+  gap: 5.6rem;
+}
+
+.p-careflow__heading {
+  background-color: #f8f8f8;
+  color: #736869;
+  height: 4.2rem;
+  display: grid;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.p-careflow__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin-top: 2.4rem;
+}
+
+.p-careflow__item {
+  border: 1px solid #484041;
+  padding: 2.4rem 1.6rem;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  position: relative;
+}
+.p-careflow__item::after {
+  content: '';
+  position: absolute;
+  right: -3.2rem;
+  width: 3.2rem;
+  top: 2.4rem;
+  height: 0;
+  border-bottom: 1px dashed #484041;
+}
+.p-careflow__item:last-child::after {
+  content: none;
+}
+
+.p-careflow__step {
+  position: absolute;
+  top: 2.4rem;
+  left: 1.6rem;
+  color: #e8e2d5;
+}
+
+.p-careflow__icon {
+  margin: auto;
+}
+
+.p-careflow__description {
+  font-size: 1.6rem;
+  font-family: var(--font-mincho);
+}
+
 .p-points {
   padding-bottom: 6.4rem;
   margin-top: 6.4rem;
