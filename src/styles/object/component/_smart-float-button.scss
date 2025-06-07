@@ -40,6 +40,7 @@
 
 .buy-now {
   position: absolute;
+  right: 4.8rem;
   bottom: -50.45px;
   z-index: 998;
   display: grid;
@@ -48,10 +49,8 @@
   place-content: center center;
   place-items: center;
   align-items: center;
-  width: 125px;
-  max-width: 14.5vw;
-  height: 109px;
-  max-height: 14.5vw;
+  width: 10.3rem;
+  height: 9rem;
   padding: 0 12px;
   margin-left: auto;
   color: #fff;
@@ -61,6 +60,11 @@
   border-radius: 9999px;
   opacity: 0;
   transition: all 0.2s;
+
+  @media (width >=1024px) {
+    width: 12.5rem;
+    height: 10.9rem;
+  }
 
   &::before {
     position: absolute;
@@ -78,7 +82,7 @@
 
 .buy-now.fixed {
   position: fixed;
-  top: 50.45px;
+  top: 5.45rem;
   bottom: unset;
   z-index: 1;
 }
