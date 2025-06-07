@@ -1007,36 +1007,38 @@ body.no-scroll {
 
 .p-careflow__columns {
   display: grid;
-  gap: 5.6rem;
-  max-width: 67.5rem;
   margin: 0 auto;
   margin-top: 3.8rem;
+  max-width: 67.5rem;
+  gap: 5.6rem;
 }
 
 .p-careflow__heading {
   display: grid;
   align-items: center;
   height: 4.2rem;
-  font-size: 1.4rem;
-  color: #736869;
   background-color: #f8f8f8;
+  color: #736869;
+  font-size: 1.4rem;
 }
 
 .p-careflow__list {
   display: grid;
+  margin-top: 2.4rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
-  margin-top: 2.4rem;
 }
 
 .p-careflow__item {
   position: relative;
-  display: grid;
-  gap: 1.6rem;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  justify-content: flex-start;
   padding: 2.4rem 1.6rem;
   border: 1px solid #484041;
+  gap: 1.6rem;
+  grid-template-rows: auto auto auto;
 }
 .p-careflow__item::after {
   position: absolute;
@@ -1044,18 +1046,20 @@ body.no-scroll {
   right: -3.2rem;
   width: 3.2rem;
   height: 0;
-  content: '';
   border-bottom: 1px dashed #484041;
+  content: '';
 }
 .p-careflow__item:last-child::after {
   content: none;
 }
 
 .p-careflow__step {
-  position: absolute;
   top: 2.4rem;
   left: 1.6rem;
   color: #e8e2d5;
+}
+.p-careflow__step.p-careflow__step--absolute {
+  position: absolute;
 }
 
 .p-careflow__icon {
@@ -1063,8 +1067,8 @@ body.no-scroll {
 }
 
 .p-careflow__description {
-  font-family: var(--font-mincho);
   font-size: 1.6rem;
+  font-family: var(--font-mincho);
 }
 
 .p-points {
