@@ -1,7 +1,7 @@
 export default function initSmartFloatButton() {
   document.addEventListener('DOMContentLoaded', () => {
     const btn = document.querySelector('.buy-now');
-    const mv = document.querySelector('.p-mv');
+    const mv = document.querySelector('.js-mv');
     let lastScrollY = window.scrollY;
     // mv の半分の幅
     const btnMraginRight = -mv.offsetWidth / 2 + 20; // 20px は調整用のマージン

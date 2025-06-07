@@ -41,11 +41,14 @@
   background: $color-tertiary;
   border-radius: 9999px;
 
+  &.c-button-cta--hamburger {
+    width: 23.402rem;
+    height: 5.914rem;
+  }
+
   &:hover {
     .c-button-cta__arrow {
       right: 2.7rem;
-
-      // 無限に動くアニメーションを追加
       animation: arrow-move 1.8s ease-in-out infinite;
 
       @keyframes arrow-move {

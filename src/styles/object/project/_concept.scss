@@ -1,11 +1,12 @@
 .p-concept {
   position: relative;
-  padding-top: 12rem;
+  padding-top: 6.4rem;
   padding-bottom: calc(32.8rem + 10rem);
   overflow: hidden;
   background: #fff;
 
   @media (width >=768px) {
+    padding-top: 12rem;
     padding-bottom: 10rem;
   }
 }

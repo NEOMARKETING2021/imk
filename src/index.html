@@ -48,20 +48,20 @@
         </button>
 
         <nav class="nav-menu" id="navMenu">
-          <ul class="nav-menu-lists">
-            <li class="nav-menu-list"><a href="#" class="nav-menu__anchor">トップ</a></li>
-            <li class="nav-menu-list"><a href="#concept" class="nav-menu__anchor">イムクについて</a></li>
-            <li class="nav-menu-list"><a href="#points" class="nav-menu__anchor">4つのポイント</a></li>
-            <li class="nav-menu-list"><a href="#trouble" class="nav-menu__anchor">お悩み</a></li>
-            <li class="nav-menu-list"><a href="#how-to-use" class="nav-menu__anchor">使い方</a></li>
-            <li class="nav-menu-list"><a href="#product" class="nav-menu__anchor">商品情報</a></li>
+          <ul class="nav-menu-list">
+            <li class="nav-menu-item"><a href="#" class="nav-menu__anchor">トップ</a></li>
+            <li class="nav-menu-item"><a href="#concept" class="nav-menu__anchor">イムクについて</a></li>
+            <li class="nav-menu-item"><a href="#points" class="nav-menu__anchor">4つのポイント</a></li>
+            <li class="nav-menu-item"><a href="#trouble" class="nav-menu__anchor">お悩み</a></li>
+            <li class="nav-menu-item"><a href="#how-to-use" class="nav-menu__anchor">使い方</a></li>
+            <li class="nav-menu-item"><a href="#product" class="nav-menu__anchor">商品情報</a></li>
           </ul>
           <ul class="nav-menu__cta">
             <li>
-              <a href="" class="c-button-cta">Amazonで購入する<span class="c-button-cta__arrow"></span></a>
+              <a href="" class="c-button-cta c-button-cta--hamburger">Amazonで購入する<span class="c-button-cta__arrow"></span></a>
             </li>
             <li>
-              <a href="" class="c-button-cta">楽天で購入する<span class="c-button-cta__arrow"></span></a>
+              <a href="" class="c-button-cta c-button-cta--hamburger">楽天で購入する<span class="c-button-cta__arrow"></span></a>
             </li>
           </ul>
         </nav>
@@ -69,23 +69,31 @@
       <main class="p-main">
 
         <!-- FV -->
-        <section class="p-fv">
+        <section class="p-mv">
           <div class="l-container">
-            <div class="p-mv">
+            <div class="p-mv__inner js-mv">
+              <h1 class="p-mv__logo">
+                <img src="images/logo.svg" alt="" width="38" height="85" class="p-mv__logo" />
+              </h1>
 
-              <h1><img src="images/logo.svg" alt="" style="position: fixed; top: 48px; left: calc(50% - 464px); z-index: 1;" width="38" height="85" /></h1>
+              <div class="p-mv__visual">
+                <p class="p-mv__catch">おかえり、<br>すなおな私</p>
+                <div class="p-mv__image-container">
+                  <picture class="p-mv__image">
+                    <source srcset="images/mv-pc.jpg" media="(min-width: 768px)">
+                    <img src="images/mv-sp.jpg" alt="メインビジュアル" width="auto" height="auto">
+                  </picture>
 
-              <section class="">
-                <p>おかえり、<br>すなおな私</p>
-                <h2>
-                  <img src="images/mv.jpg" alt="" style="margin-left: auto; display: block;" width="1338" height="1068" />
+                </div>
+              </div>
 
-                </h2>
-              </section>
-              <a href="#cta" class="buy-now">BUY<br>NOW<span class="buy-now__arrow"></span></a>
+              <a href="#cta" class="buy-now p-mv__cta">
+                BUY<br>NOW<span class="buy-now__arrow"></span>
+              </a>
             </div>
           </div>
         </section>
+
         <!-- CONCEPT -->
         <section id="concept" class="p-concept">
           <div class="l-container">
