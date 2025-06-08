@@ -567,8 +567,31 @@ video {
   margin-right: auto;
 }
 
+.-mx-7 {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+}
+
 .block {
   display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.target\:hidden:target {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .mobile-m\:inline {
+    display: inline;
+  }
+
+  .mobile-m\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 425px) {
@@ -582,13 +605,11 @@ video {
     position: relative;
   }
 
+  .tablet\:inline {
+    display: inline;
+  }
+
   .tablet\:hidden {
     display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .laptop\:relative {
-    position: relative;
   }
 }

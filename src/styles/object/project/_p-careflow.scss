@@ -8,7 +8,8 @@
 }
 
 .p-careflow__text {
-  // property: value;
+  margin-right: -3rem;
+  margin-left: -3rem;
 }
 
 .p-careflow__columns {
@@ -34,9 +35,12 @@
 
 .p-careflow__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
   margin-top: 2.4rem;
+
+  @media (width >=768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .p-careflow__item {
@@ -52,12 +56,22 @@
 
   &::after {
     position: absolute;
-    top: 2.4rem;
-    right: -3.2rem;
-    width: 3.2rem;
-    height: 0;
+    right: 50%;
+    bottom: -3.2rem;
+    width: 0;
+    height: 3.2rem;
     content: '';
-    border-bottom: 1px dashed $color-senary;
+    border-color: $color-senary;
+    border-style: dashed;
+    border-width: 0 0 0 1px;
+
+    @media (width >=768px) {
+      top: 2.4rem;
+      right: -3.2rem;
+      width: 3.2rem;
+      height: 0;
+      border-width: 1px 0 0;
+    }
   }
 
   &:last-child::after {
@@ -80,14 +94,35 @@
 }
 
 .p-careflow__description {
+  margin-right: -0.1rem;
+  margin-left: -0.1rem;
   font-family: var(--font-mincho);
   font-size: 1.6rem;
+
+  &.p-careflow__description--use-imk {
+    color: $color-secondary;
+  }
 }
 
 .p-careflow__note {
-  // property: value;
+  font-size: 1.2rem;
+  line-height: math.div(22, 12);
+  color: $color-septenary;
 }
 
 .p-careflow__conclusion {
-  // property: value;
+  margin-top: 4rem;
+  margin-right: -3rem;
+  margin-left: -3rem;
+  font-family: var(--font-mincho);
+  font-size: 2rem;
+  line-height: math.div(32, 22);
+
+  @media (width >=375px) {
+    font-size: 2.2rem;
+  }
+}
+
+.p-careflow__conclusion-underline {
+  background: linear-gradient(transparent 80%, #eeece6 80%);
 }

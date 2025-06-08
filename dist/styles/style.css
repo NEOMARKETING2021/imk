@@ -1005,49 +1005,69 @@ body.no-scroll {
   text-align: center;
 }
 
+.p-careflow__text {
+  margin-right: -3rem;
+  margin-left: -3rem;
+}
+
 .p-careflow__columns {
   display: grid;
+  gap: 5.6rem;
+  max-width: 67.5rem;
   margin: 0 auto;
   margin-top: 3.8rem;
-  max-width: 67.5rem;
-  gap: 5.6rem;
 }
 
 .p-careflow__heading {
   display: grid;
   align-items: center;
   height: 4.2rem;
-  background-color: #f8f8f8;
-  color: #736869;
   font-size: 1.4rem;
+  color: #736869;
+  background-color: #f8f8f8;
 }
 
 .p-careflow__list {
   display: grid;
-  margin-top: 2.4rem;
-  grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
+  margin-top: 2.4rem;
+}
+@media (width >= 768px) {
+  .p-careflow__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .p-careflow__item {
   position: relative;
   display: flex;
   flex-direction: column;
+  grid-template-rows: auto auto auto;
+  gap: 1.6rem;
   justify-content: center;
   justify-content: flex-start;
   padding: 2.4rem 1.6rem;
   border: 1px solid #484041;
-  gap: 1.6rem;
-  grid-template-rows: auto auto auto;
 }
 .p-careflow__item::after {
   position: absolute;
-  top: 2.4rem;
-  right: -3.2rem;
-  width: 3.2rem;
-  height: 0;
-  border-bottom: 1px dashed #484041;
+  right: 50%;
+  bottom: -3.2rem;
+  width: 0;
+  height: 3.2rem;
   content: '';
+  border-color: #484041;
+  border-style: dashed;
+  border-width: 0 0 0 1px;
+}
+@media (width >= 768px) {
+  .p-careflow__item::after {
+    top: 2.4rem;
+    right: -3.2rem;
+    width: 3.2rem;
+    height: 0;
+    border-width: 1px 0 0;
+  }
 }
 .p-careflow__item:last-child::after {
   content: none;
@@ -1067,8 +1087,37 @@ body.no-scroll {
 }
 
 .p-careflow__description {
-  font-size: 1.6rem;
+  margin-right: -0.1rem;
+  margin-left: -0.1rem;
   font-family: var(--font-mincho);
+  font-size: 1.6rem;
+}
+.p-careflow__description.p-careflow__description--use-imk {
+  color: #ae8e4c;
+}
+
+.p-careflow__note {
+  font-size: 1.2rem;
+  line-height: 1.8333333333;
+  color: #bdb4b4;
+}
+
+.p-careflow__conclusion {
+  margin-top: 4rem;
+  margin-right: -3rem;
+  margin-left: -3rem;
+  font-family: var(--font-mincho);
+  font-size: 2rem;
+  line-height: 1.4545454545;
+}
+@media (width >= 375px) {
+  .p-careflow__conclusion {
+    font-size: 2.2rem;
+  }
+}
+
+.p-careflow__conclusion-underline {
+  background: linear-gradient(transparent 80%, #eeece6 80%);
 }
 
 .p-points {
