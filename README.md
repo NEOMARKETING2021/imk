@@ -85,3 +85,17 @@ npm run format
   font-style: normal;
 }
 ```
+
+## CTA ボタンの無効化
+
+無効化
+
+```JavaScript
+toggleCtaLinkDisabled(true);
+```
+
+有効化
+
+```JavaScript
+toggleCtaLinkDisabled(false);
+```

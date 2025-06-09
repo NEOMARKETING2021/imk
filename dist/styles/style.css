@@ -114,6 +114,10 @@ body {
     right: 3rem;
   }
 }
+.c-button-cta.js-disabled-link {
+  cursor: not-allowed;
+  background-color: #b9b9b9;
+}
 
 body.no-scroll {
   overflow: hidden;
@@ -569,6 +573,16 @@ body.no-scroll {
   }
 }
 
+.p-cta__release-date {
+  display: table;
+  margin-right: auto;
+  margin-bottom: 3.2rem;
+  margin-left: auto;
+  font-size: 2.6rem;
+  text-align: center;
+  background: linear-gradient(transparent 80%, #eeece6 80%);
+}
+
 .p-damage-awareness {
   position: relative;
   padding: 6.8rem 0;
@@ -779,9 +793,9 @@ body.no-scroll {
 
 .p-how-to-use__step-label {
   margin-bottom: 2.4rem;
+  font-family: var(--font-sans-latin);
   font-size: 1.4rem;
   color: #e8e2d5;
-  font-family: var(--font-sans-latin);
 }
 
 .p-how-to-use__step-description {
@@ -1082,8 +1096,8 @@ body.no-scroll {
 .p-careflow__step {
   top: 2.4rem;
   left: 1.6rem;
-  color: #e8e2d5;
   font-family: var(--font-sans-latin);
+  color: #e8e2d5;
 }
 .p-careflow__step.p-careflow__step--absolute {
   position: absolute;

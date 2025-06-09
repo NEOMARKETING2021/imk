@@ -66,4 +66,9 @@
       }
     }
   }
+
+  &.js-disabled-link {
+    cursor: not-allowed;
+    background-color: #b9b9b9;
+  }
 }
