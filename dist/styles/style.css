@@ -89,11 +89,14 @@ body {
   position: relative;
   display: grid;
   place-items: center;
-  width: 27.7rem;
+  width: 100%;
+  max-width: 27.7rem;
   height: 7rem;
   color: #fff;
   background: #b1b199;
   border-radius: 9999px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .c-button-cta.c-button-cta--hamburger {
   width: 23.402rem;
@@ -552,11 +555,11 @@ body.no-scroll {
 .p-cta__buttons {
   display: grid;
   gap: 3.2rem;
-  justify-content: center;
 }
 @media (width >= 768px) {
   .p-cta__buttons {
-    grid-template-columns: auto auto;
+    grid-template-columns: 27.7rem 27.7rem;
+    justify-content: center;
   }
 }
 
@@ -573,14 +576,29 @@ body.no-scroll {
   }
 }
 
-.p-cta__release-date {
-  display: table;
-  margin-right: auto;
-  margin-bottom: 3.2rem;
-  margin-left: auto;
-  font-size: 2.6rem;
+.p-cta__coming-soon {
+  margin-bottom: 0.4rem;
+  font-family: var(--font-sans-latin);
+  font-size: 1.4rem;
+  color: #736869;
   text-align: center;
+}
+
+.p-cta__border {
   background: linear-gradient(transparent 80%, #eeece6 80%);
+}
+
+.p-cta__release-date {
+  margin-right: -3rem;
+  margin-bottom: 3.2rem;
+  margin-left: -3rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+@media (width >= 375px) {
+  .p-cta__release-date {
+    font-size: 2.6rem;
+  }
 }
 
 .p-damage-awareness {

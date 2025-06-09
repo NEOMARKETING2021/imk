@@ -1,23 +1,35 @@
 export default function toggleCtaLinkDisabled(isDisabled) {
   const links = document.querySelectorAll('.c-button-cta');
+  const releaseDates = document.querySelectorAll('.p-cta__release-date');
 
   links.forEach(link => {
-    // 無効化する場合
     if (isDisabled) {
       link.classList.add('js-disabled-link');
       link.setAttribute('aria-disabled', 'true');
-
-      // preventDefault を設定（重複を避けるため一度削除してから追加）
       link.removeEventListener('click', handleDisabledClick);
       link.addEventListener('click', handleDisabledClick);
-    }
-    // 有効化する場合
-    else {
+    } else {
       link.classList.remove('js-disabled-link');
       link.removeAttribute('aria-disabled');
-
-      // イベント解除
       link.removeEventListener('click', handleDisabledClick);
+    }
+  });
+
+  // 各 release-date に対して Coming Soon の挿入/削除を実行
+  releaseDates.forEach(releaseDate => {
+    const existingComingSoon = releaseDate.parentNode.querySelector('.p-cta__coming-soon');
+
+    if (isDisabled) {
+      if (!existingComingSoon) {
+        const comingSoon = document.createElement('p');
+        comingSoon.className = 'p-cta__coming-soon';
+        comingSoon.textContent = 'Coming Soon';
+        releaseDate.parentNode.insertBefore(comingSoon, releaseDate);
+      }
+    } else {
+      if (existingComingSoon) {
+        existingComingSoon.remove();
+      }
     }
   });
 

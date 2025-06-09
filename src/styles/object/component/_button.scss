@@ -35,8 +35,11 @@
   position: relative;
   display: grid;
   place-items: center;
-  width: 27.7rem;
+  width: 100%;
+  max-width: 27.7rem;
   height: 7rem;
+  margin-right: auto;
+  margin-left: auto;
   color: #fff;
   background: $color-tertiary;
   border-radius: 9999px;
