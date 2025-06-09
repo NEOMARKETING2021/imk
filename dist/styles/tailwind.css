@@ -562,14 +562,14 @@ video {
   position: relative;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .-mx-7 {
   margin-left: -1.75rem;
   margin-right: -1.75rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .block {
@@ -577,10 +577,6 @@ video {
 }
 
 .hidden {
-  display: none;
-}
-
-.target\:hidden:target {
   display: none;
 }
 
