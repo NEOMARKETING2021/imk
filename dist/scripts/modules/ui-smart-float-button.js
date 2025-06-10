@@ -6,29 +6,34 @@ export default function initSmartFloatButton() {
 
     let lastScrollY = window.scrollY;
 
-    // ✅ ボタン位置調整（スマホファースト）
-    if (window.innerWidth < 768) {
-      btn.style.right = '3rem';
-      btn.style.marginRight = '';
-    } else {
-      const btnMarginRight = -mv.offsetWidth / 2 + 20; // 20px = 調整マージン
-      btn.style.right = '50%';
-      btn.style.marginRight = `${btnMarginRight}px`;
+    // ボタン位置を更新する関数（768px未満はright: 3rem、それ以上は中央）
+    function updateButtonPosition() {
+      if (window.innerWidth < 768) {
+        btn.style.right = '3rem';
+        btn.style.marginRight = '';
+      } else {
+        const btnMarginRight = -mv.offsetWidth / 2 + 20;
+        btn.style.right = '50%';
+        btn.style.marginRight = `${btnMarginRight}px`;
+      }
     }
 
-    // 0.5秒後に表示
+    // トリガーポイントを算出する関数（1024px未満と以上で分岐）
+    function getTriggerPoint() {
+      const mvBottom = mv.offsetTop + mv.offsetHeight;
+      return window.innerWidth < 1024 ? mvBottom - 90 + 68 : mvBottom - 109;
+    }
+
+    // 初期位置調整と表示
+    updateButtonPosition();
     setTimeout(() => {
       btn.style.opacity = '1';
     }, 500);
 
+    // スクロール処理
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
-      const mvBottom = mv.offsetTop + mv.offsetHeight;
-
-      // ✅ スマホファーストで 1024px 未満を優先
-      const triggerPoint = window.innerWidth < 1024
-        ? mvBottom - 90 + 68
-        : mvBottom - 109;
+      const triggerPoint = getTriggerPoint();
 
       const isScrollingDown = currentScrollY > lastScrollY;
       const isPastTrigger = currentScrollY > triggerPoint;
@@ -41,6 +46,15 @@ export default function initSmartFloatButton() {
       }
 
       lastScrollY = currentScrollY;
+    });
+
+    // resize 時の再計算（デバウンス付き）
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        updateButtonPosition();
+      }, 200);
     });
   });
 }

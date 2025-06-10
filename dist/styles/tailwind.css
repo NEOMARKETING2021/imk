@@ -584,6 +584,10 @@ video {
   display: none;
 }
 
+.resize {
+  resize: both;
+}
+
 @media (min-width: 375px) {
   .mobile-m\:inline {
     display: inline;
