@@ -9,7 +9,7 @@ body.no-scroll {
   z-index: 999;
   display: grid;
   grid-template-rows: auto auto;
-  gap: 4.2rem;
+  gap: 3.2rem;
   place-content: center center;
   align-items: center;
   width: 100%;
@@ -41,12 +41,8 @@ body.no-scroll {
   .nav-menu-list {
     display: flex;
     flex-direction: column;
+    gap: 1.6rem;
     justify-content: space-between;
-    height: 27.6rem;
-
-    @media (width >=1024px) {
-      height: 20rem;
-    }
   }
 
   .nav-menu-item {
@@ -70,6 +66,12 @@ body.no-scroll {
   padding: 0;
   text-align: center;
   list-style: none;
+}
+
+.nav-menu__release-date {
+  @media (width >=1024px) {
+    display: none;
+  }
 }
 
 .nav-menu__cta {

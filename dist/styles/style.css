@@ -92,11 +92,11 @@ body {
   width: 100%;
   max-width: 27.7rem;
   height: 7rem;
+  margin-right: auto;
+  margin-left: auto;
   color: #fff;
   background: #b1b199;
   border-radius: 9999px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .c-button-cta.c-button-cta--hamburger {
   width: 23.402rem;
@@ -133,7 +133,7 @@ body.no-scroll {
   z-index: 999;
   display: grid;
   grid-template-rows: auto auto;
-  gap: 4.2rem;
+  gap: 3.2rem;
   place-content: center center;
   align-items: center;
   width: 100%;
@@ -161,13 +161,8 @@ body.no-scroll {
 .nav-menu .nav-menu-list {
   display: flex;
   flex-direction: column;
+  gap: 1.6rem;
   justify-content: space-between;
-  height: 27.6rem;
-}
-@media (width >= 1024px) {
-  .nav-menu .nav-menu-list {
-    height: 20rem;
-  }
 }
 .nav-menu .nav-menu-item {
   text-align: left;
@@ -190,6 +185,12 @@ body.no-scroll {
   padding: 0;
   text-align: center;
   list-style: none;
+}
+
+@media (width >= 1024px) {
+  .nav-menu__release-date {
+    display: none;
+  }
 }
 
 .nav-menu__cta {
@@ -590,9 +591,8 @@ body.no-scroll {
 
 .p-cta__release-date {
   margin-right: -3rem;
-  margin-bottom: 3.2rem;
   margin-left: -3rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
 }
 @media (width >= 375px) {
