@@ -39,9 +39,9 @@
 }
 
 .buy-now {
-  position: absolute;
-  right: 4.8rem;
-  bottom: -50.45px;
+  position: fixed;
+  right: 0.8rem;
+  bottom: 0.8rem;
   z-index: 998;
   display: grid;
   grid-template-rows: auto auto;
@@ -58,12 +58,15 @@
   cursor: pointer;
   border: none;
   border-radius: 9999px;
-  opacity: 0;
   transition: all 0.2s;
 
   @media (width >=1024px) {
+    position: absolute;
+    right: 4.8rem;
+    bottom: -50.45px;
     width: 12.5rem;
     height: 10.9rem;
+    opacity: 0;
   }
 
   &::before {
@@ -81,10 +84,12 @@
 }
 
 .buy-now.fixed {
-  position: fixed;
-  top: 5.45rem;
-  bottom: unset;
-  z-index: 1;
+  @media (width >=1024px) {
+    position: fixed;
+    top: 5.45rem;
+    bottom: unset;
+    z-index: 1;
+  }
 }
 
 .buy-now__arrow {

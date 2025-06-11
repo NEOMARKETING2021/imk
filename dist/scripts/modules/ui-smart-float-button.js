@@ -4,24 +4,21 @@ export default function initSmartFloatButton() {
     const mv = document.querySelector('.js-mv');
     if (!btn || !mv) return;
 
+    // 1024px 未満は何もしない
+    if (window.innerWidth < 1024) return;
+
     let lastScrollY = window.scrollY;
 
-    // ボタン位置を更新する関数（768px未満はright: 3rem、それ以上は中央）
     function updateButtonPosition() {
-      if (window.innerWidth < 768) {
-        btn.style.right = '3rem';
-        btn.style.marginRight = '';
-      } else {
-        const btnMarginRight = -mv.offsetWidth / 2 + 20;
-        btn.style.right = '50%';
-        btn.style.marginRight = `${btnMarginRight}px`;
-      }
+      const btnMarginRight = -mv.offsetWidth / 2 + 20;
+      btn.style.right = '50%';
+      btn.style.marginRight = `${btnMarginRight}px`;
+      btn.style.opacity = '1';
     }
 
-    // トリガーポイントを算出する関数（1024px未満と以上で分岐）
     function getTriggerPoint() {
       const mvBottom = mv.offsetTop + mv.offsetHeight;
-      return window.innerWidth < 1024 ? mvBottom - 90 + 68 : mvBottom - 109;
+      return mvBottom - 109;
     }
 
     // 初期位置調整と表示
@@ -30,7 +27,6 @@ export default function initSmartFloatButton() {
       btn.style.opacity = '1';
     }, 500);
 
-    // スクロール処理
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
       const triggerPoint = getTriggerPoint();
@@ -48,12 +44,19 @@ export default function initSmartFloatButton() {
       lastScrollY = currentScrollY;
     });
 
-    // resize 時の再計算（デバウンス付き）
     let resizeTimeout;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
-        updateButtonPosition();
+        if (window.innerWidth >= 1024) {
+          updateButtonPosition();
+        } else {
+          // 小さい画面になった場合は初期化
+          btn.classList.remove('fixed');
+          btn.style.right = '';
+          btn.style.marginRight = '';
+          btn.style.opacity = '';
+        }
       }, 200);
     });
   });
