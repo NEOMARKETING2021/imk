@@ -22,5 +22,14 @@ export default function initHamburgerMenu() {
         }
       });
     });
+
+    // ✅ 画面幅が1024px以上になったらメニューを強制的に閉じる
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        navMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        document.body.classList.remove('no-scroll');
+      }
+    });
   });
 }
