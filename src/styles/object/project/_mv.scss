@@ -8,13 +8,7 @@
 
 .p-mv__inner {
   position: relative;
-  margin-right: -0.2rem;
-  margin-left: -3rem;
-
-  @media (width >=768px) {
-    margin-right: -3rem;
-    margin-left: unset;
-  }
+  margin-right: 3rem;
 
   @media (width >=1024px) {
     margin-right: -5.8rem;
@@ -55,7 +49,9 @@
   @media (width >=1024px) {
     top: 50%;
     right: unset;
-    left: 5.8rem;
+    right: calc(50% + 27.5rem);
+    left: 11.6rem;
+    left: unset;
     font-size: 3rem;
     line-height: math.div(46, 30);
     color: $color-primary;
@@ -64,18 +60,30 @@
 }
 
 .p-mv__image-container {
+  display: block;
+  width: 100%;
+
   @media (width >=1024px) {
-    // property: value;
+    max-width: calc(50% + 15.7rem);
+    margin-left: auto;
   }
 }
 
 .p-mv__image {
-  display: block;
-  width: 100%;
-  max-width: 66.9rem;
-  margin-left: auto;
-
   @media (width >=1024px) {
-    // property: value;
+    // overflow: hidden;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 38.3rem;
+    object-fit: cover;
+    object-position: center;
+
+    @media (width >=1024px) {
+      max-height: 55.5rem;
+    }
   }
 }
