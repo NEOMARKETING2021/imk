@@ -19,7 +19,6 @@ body.no-scroll {
 
   @media (width >=1024px) {
     position: fixed;
-    top: 37.8rem;
     right: unset;
     left: calc(50% - 46.4rem);
     z-index: 1000;
@@ -31,6 +30,7 @@ body.no-scroll {
     width: unset;
     height: unset;
     background-color: unset;
+    transition: top 0.3s;
   }
 
   .nav-menu-list {

@@ -4,45 +4,43 @@ export default function initStickyNavMenu() {
     const footer = document.querySelector('.p-footer');
     if (!navMenu || !footer) return;
 
+    // 常に固定
+    navMenu.style.top = '37.8rem'; // 初期位置
+
+    // CSSトランジションを追加（必要なら）
+    navMenu.style.transition = 'top 0.3s ease';
+
     let lastScrollY = window.scrollY;
 
-    const updateNavPosition = () => {
+    const updateNavTop = () => {
       if (window.innerWidth < 1024) {
-        navMenu.style.position = '';
+        // 初期化
         navMenu.style.top = '';
-        navMenu.style.bottom = '';
         return;
       }
 
-      const navRect = navMenu.getBoundingClientRect();
+      const navHeight = navMenu.offsetHeight;
       const footerRect = footer.getBoundingClientRect();
       const currentScrollY = window.scrollY;
       const isScrollingDown = currentScrollY > lastScrollY;
 
-      const footerVisibleHeight = Math.max(
-        0,
-        Math.min(footerRect.bottom, window.innerHeight) - Math.max(footerRect.top, 0)
-      );
-
-      const contactTrigger = navRect.bottom >= (footerRect.top - 90);
-      const footerOutOfView = footerRect.top >= window.innerHeight;
+      const contactTrigger = (navMenu.getBoundingClientRect().bottom >= footerRect.top - 90);
+      const footerOutOfView = (footerRect.top >= window.innerHeight);
 
       if (isScrollingDown && contactTrigger) {
-        navMenu.style.position = 'fixed';
-        navMenu.style.top = 'auto';
-        navMenu.style.bottom = `${footerVisibleHeight + 90}px`;
+        // フッターと接触したら navMenu の top を調整（固定したまま下へ）
+        const newTop = footerRect.top - navHeight - 90;
+        navMenu.style.top = `${newTop}px`;
       } else if (!isScrollingDown && footerOutOfView) {
-        navMenu.style.position = 'fixed';
+        // フッターが見えなくなったら元の top に戻す
         navMenu.style.top = '37.8rem';
-        navMenu.style.bottom = 'auto';
       }
 
       lastScrollY = currentScrollY;
     };
 
-    window.addEventListener('scroll', updateNavPosition);
-    window.addEventListener('resize', updateNavPosition);
-
-    updateNavPosition();
+    window.addEventListener('scroll', updateNavTop);
+    window.addEventListener('resize', updateNavTop);
+    updateNavTop();
   });
 }
