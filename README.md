@@ -8,7 +8,19 @@ npm run watch
 
 ## build
 
-不要
+```shell
+npm run build:esbuild       # JSのみビルド
+npm run build               # JSとEleventyを両方ビルド
+```
+
+## JavaScript bundle
+
+```shell
+npx esbuild src/scripts/script.js \
+  --bundle \
+  --outfile=dist/scripts/script.js \
+  --target=es2015 \
+```
 
 ## Git push の前に
 

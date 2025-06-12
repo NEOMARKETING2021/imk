@@ -9,6 +9,8 @@
     "watch": "npm run watch:sass & npm run watch:tailwindcss & npm run serve:eleventy",
     "watch:tailwindcss": "npx tailwindcss -i ./src/tailwindcss-input.css -o ./dist/styles/tailwind.css --watch",
     "watch:sass": "sass --no-source-map --watch src/styles/:dist/styles/",
+    "build:esbuild": "esbuild src/scripts/script.js --bundle --outfile=dist/scripts/script.js --target=es2015",
+    "build": "npm run build:esbuild && npm run build:eleventy",
     "eslint": "eslint dist/**/*.js --fix",
     "prettier": "prettier --write dist/**/*.{js,css,html}",
     "stylelint": "stylelint 'src/**/*.scss' --fix",
