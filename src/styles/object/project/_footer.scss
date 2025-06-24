@@ -33,13 +33,13 @@
 
 .p-footer__buttons {
   display: grid;
-  grid-template-columns: repeat(2, auto);
   gap: 0.8rem;
   justify-content: center;
   margin-bottom: 1.6rem;
 
   @media (width >=768px) {
-    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    font-size: 1.4rem;
   }
 }
 

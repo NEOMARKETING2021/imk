@@ -746,14 +746,14 @@ body.no-scroll {
 
 .p-footer__buttons {
   display: grid;
-  grid-template-columns: repeat(2, auto);
   gap: 0.8rem;
   justify-content: center;
   margin-bottom: 1.6rem;
 }
 @media (width >= 768px) {
   .p-footer__buttons {
-    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    font-size: 1.4rem;
   }
 }
 
@@ -1047,14 +1047,8 @@ body.no-scroll {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 38.3rem;
   object-fit: cover;
   object-position: center;
-}
-@media (width >= 1024px) {
-  .p-mv__image img {
-    max-height: 55.5rem;
-  }
 }
 
 .p-careflow {

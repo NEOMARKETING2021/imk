@@ -78,12 +78,7 @@
     display: block;
     width: 100%;
     height: auto;
-    max-height: 38.3rem;
     object-fit: cover;
     object-position: center;
-
-    @media (width >=1024px) {
-      max-height: 55.5rem;
-    }
   }
 }
