@@ -752,7 +752,7 @@ body.no-scroll {
 }
 @media (width >= 768px) {
   .p-footer__buttons {
-    justify-content: start;
+    justify-content: end;
     font-size: 1.4rem;
   }
 }
