@@ -477,6 +477,48 @@ body.no-scroll {
   transform: rotate(-45deg);
 }
 
+.p-company {
+  padding-top: 9.6rem;
+  padding-bottom: 10.2rem;
+}
+
+@media (width >= 768px) {
+  .p-ditails {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-ditails dt,
+.p-ditails dd {
+  font-size: 1.4rem;
+}
+
+.p-ditails dt {
+  padding-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  color: #e8e2d5;
+  border-top: 1px solid #efece6;
+}
+@media (width >= 768px) {
+  .p-ditails dt {
+    width: 25%;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.p-ditails dd {
+  padding-top: 0.4rem;
+  padding-bottom: 2.4rem;
+}
+@media (width >= 768px) {
+  .p-ditails dd {
+    width: 75%;
+    padding-top: 2.4rem;
+    border-top: 1px solid #efece6;
+  }
+}
+
 .p-concept {
   position: relative;
   padding-top: 6.4rem;
@@ -752,7 +794,7 @@ body.no-scroll {
 }
 @media (width >= 768px) {
   .p-footer__buttons {
-    justify-content: end;
+    justify-content: start;
     font-size: 1.4rem;
   }
 }

@@ -1,0 +1,39 @@
+.p-company {
+  padding-top: 9.6rem;
+  padding-bottom: 10.2rem;
+}
+
+.p-ditails {
+  @media (width >=768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-ditails dt,
+.p-ditails dd {
+  font-size: 1.4rem;
+}
+
+.p-ditails dt {
+  padding-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  color: $color-octonary;
+  border-top: 1px solid $color-quaternary;
+
+  @media (width >=768px) {
+    width: 25%;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.p-ditails dd {
+  padding-top: 0.4rem;
+  padding-bottom: 2.4rem;
+
+  @media (width >=768px) {
+    width: 75%;
+    padding-top: 2.4rem;
+    border-top: 1px solid $color-quaternary;
+  }
+}
