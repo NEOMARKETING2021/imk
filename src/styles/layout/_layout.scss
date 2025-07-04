@@ -23,3 +23,9 @@
     margin-left: 17.2rem;
   }
 }
+
+.l-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100dvh;
+}

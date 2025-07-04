@@ -52,6 +52,12 @@ body {
   }
 }
 
+.l-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100dvh;
+}
+
 .c-button-cta__arrow {
   position: absolute;
   top: 50%;
@@ -322,14 +328,13 @@ body.no-scroll {
 
 .c-heading-primary-sub {
   display: inline-block;
-  margin-left: -1.4rem;
+  margin-left: -2.2rem;
   font-family: var(--font-sans-latin);
   font-size: 1.4rem;
   line-height: 1;
   color: #efece6;
   transform: rotate(90deg) translateX(-3rem);
   transform-origin: left bottom;
-  text-orientation: upleft;
 }
 @media (width >= 1024px) {
   .c-heading-primary-sub {
