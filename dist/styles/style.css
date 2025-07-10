@@ -151,7 +151,7 @@ body.no-scroll {
   .nav-menu {
     position: fixed;
     right: unset;
-    left: calc(50% - 46.4rem);
+    left: 3.5rem;
     z-index: 1000;
     display: flex;
     flex-direction: row;
@@ -1044,7 +1044,7 @@ body.no-scroll {
   .p-mv__logo {
     position: fixed;
     top: 48px;
-    left: calc(50% - 464px);
+    left: 3.5rem;
     z-index: 1;
   }
 }
