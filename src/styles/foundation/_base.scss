@@ -21,4 +21,10 @@ body {
   font-weight: 400;
   line-height: 160%;
   color: $color-primary;
+  -webkit-font-smoothing: antialiased;
+
+  /* Chrome, Edge (Chromium) ジャギー対応 */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Firefox ジャギー対応 */
 }
