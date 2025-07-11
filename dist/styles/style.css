@@ -563,11 +563,11 @@ body.no-scroll {
 .p-concept__image-img {
   top: 0;
   right: 0;
-  width: 28.3rem;
+  width: 31.3rem;
 }
 @media (width >= 768px) {
   .p-concept__image-img {
-    width: 34.8rem;
+    width: 38.5rem;
   }
 }
 
@@ -799,7 +799,7 @@ body.no-scroll {
 }
 @media (width >= 768px) {
   .p-footer__buttons {
-    justify-content: start;
+    justify-content: end;
     font-size: 1.4rem;
   }
 }
