@@ -1404,6 +1404,132 @@ body.no-scroll {
   margin-top: 5.6rem;
 }
 
+.p-qa {
+  display: block;
+  padding-top: 10.52rem;
+  padding-bottom: 12rem;
+}
+
+.p-qa__hgroup {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 7.9rem;
+}
+.p-qa__hgroup .c-heading-2 {
+  margin-left: 0;
+}
+.p-qa__hgroup .c-heading-2-sub {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p-qa__accordion {
+  margin-top: 7.2rem;
+  margin-bottom: 5.6rem;
+}
+
+.p-qa__details {
+  position: relative;
+  margin: 0 auto 2rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #686fb4;
+}
+@media (width >= 768px) {
+  .p-qa__details {
+    font-size: 1.6rem;
+  }
+}
+
+.p-qa__details__summary {
+  position: relative;
+  display: block;
+  padding: 2rem 4.8rem 2rem 6.2rem;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (width >= 768px) {
+  .p-qa__details__summary {
+    padding: 2rem 7rem 2rem 9.4rem;
+  }
+}
+.p-qa__details__summary::-webkit-details-marker {
+  display: none;
+}
+.p-qa__details__summary::before {
+  position: absolute;
+  top: 1.8rem;
+  left: 4rem;
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #f9abd6;
+  content: 'Q.';
+}
+@media (width >= 768px) {
+  .p-qa__details__summary::before {
+    left: 7rem;
+    font-size: 2.4rem;
+  }
+}
+.p-qa__details__summary::after {
+  position: absolute;
+  top: 0;
+  right: 0.8rem;
+  bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin: auto;
+  content: '+';
+}
+@media (width >= 768px) {
+  .p-qa__details__summary::after {
+    right: 2.4rem;
+  }
+}
+.p-qa__details[open] .p-qa__details__summary::after {
+  content: '-';
+}
+
+.p-qa__details__content {
+  position: relative;
+  padding-right: 4.8rem;
+  padding-left: 6.2rem;
+  overflow: hidden;
+}
+@media (width >= 768px) {
+  .p-qa__details__content {
+    padding-right: 7rem;
+    padding-left: 9.4rem;
+  }
+}
+.p-qa__details__content > * {
+  margin: 0;
+}
+.p-qa__details__content > *:last-child {
+  padding-bottom: 2rem;
+}
+.p-qa__details__content::before {
+  position: absolute;
+  top: -0.2rem;
+  left: 4rem;
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #f9abd6;
+  content: 'A.';
+}
+@media (width >= 768px) {
+  .p-qa__details__content::before {
+    left: 7rem;
+    font-size: 2.4rem;
+  }
+}
+
 .p-trouble {
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;

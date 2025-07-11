@@ -1,0 +1,136 @@
+// font size を変数化
+$font-size-qa-sp: 2.2rem;
+$color-sub-1: #f9abd6;
+$color-sub-2: #686fb4;
+
+.p-qa {
+  display: block;
+  padding-top: 10.52rem;
+  padding-bottom: 12rem;
+}
+
+.p-qa__hgroup {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 7.9rem;
+
+  .c-heading-2 {
+    margin-left: 0;
+  }
+
+  .c-heading-2-sub {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// ACCORDION
+.p-qa__accordion {
+  margin-top: 7.2rem;
+  margin-bottom: 5.6rem;
+}
+
+.p-qa__details {
+  position: relative;
+  margin: 0 auto 2rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid $color-sub-2;
+
+  @media (width >=768px) {
+    font-size: 1.6rem;
+  }
+}
+
+.p-qa__details__summary {
+  position: relative;
+  display: block;
+  padding: 2rem 4.8rem 2rem (4rem + $font-size-qa-sp);
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+
+  @media (width >=768px) {
+    padding: 2rem 7rem 2rem (7rem + 2.4rem);
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    top: 1.8rem;
+    left: 4rem;
+    display: inline-block;
+    font-size: $font-size-qa-sp;
+    font-weight: 400;
+    line-height: 1;
+    color: $color-sub-1;
+    content: 'Q.';
+
+    @media (width >=768px) {
+      left: 7rem;
+      font-size: 2.4rem;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0.8rem;
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: auto;
+    content: '+';
+
+    @media (width >=768px) {
+      right: 2.4rem;
+    }
+
+    .p-qa__details[open] & {
+      content: '-';
+    }
+  }
+}
+
+.p-qa__details__content {
+  position: relative;
+  padding-right: 4.8rem;
+  padding-left: (4rem + $font-size-qa-sp);
+  overflow: hidden;
+
+  @media (width >=768px) {
+    padding-right: 7rem;
+    padding-left: (7rem + 2.4rem);
+  }
+
+  > * {
+    margin: 0;
+
+    &:last-child {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: -0.2rem;
+    left: 4rem;
+    display: inline-block;
+    font-size: $font-size-qa-sp;
+    font-weight: 400;
+    line-height: 1;
+    color: $color-sub-1;
+    content: 'A.';
+
+    @media (width >=768px) {
+      left: 7rem;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+// /ACCORDION

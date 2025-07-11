@@ -1,4 +1,51 @@
 (() => {
+  // src/scripts/modules/accordion.js
+  function initDetailsAccordion() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const details = document.querySelectorAll('.js-details');
+      if (!details || details.length === 0) {
+        return;
+      }
+      details.forEach((element) => {
+        const summary = element.querySelector('.js-details__summary');
+        const content = element.querySelector('.js-details__content');
+        if (!summary || !content) {
+          return;
+        }
+        summary.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (element.open) {
+            const closeAnimation = content.animate(
+              {
+                opacity: [1, 0],
+                height: [`${content.offsetHeight}px`, 0],
+              },
+              {
+                duration: 360,
+                easing: 'ease-out',
+              }
+            );
+            closeAnimation.onfinish = () => {
+              element.removeAttribute('open');
+            };
+          } else {
+            element.setAttribute('open', 'true');
+            content.animate(
+              {
+                opacity: [0, 1],
+                height: [0, `${content.offsetHeight}px`],
+              },
+              {
+                duration: 360,
+                easing: 'ease-out',
+              }
+            );
+          }
+        });
+      });
+    });
+  }
+
   // src/scripts/modules/initStickyNavMenu.js
   function initStickyNavMenu() {
     document.addEventListener('DOMContentLoaded', () => {
@@ -169,6 +216,7 @@
   }
 
   // src/scripts/script.js
+  initDetailsAccordion();
   initStickyNavMenu();
   initSmoothScrollWithoutHash();
   initHamburgerMenu();
