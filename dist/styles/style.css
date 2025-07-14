@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap';
 :root {
-  --font-mincho: 'Zen Old Mincho', 'Hiragino Mincho ProN', 'MS PMincho', '游明朝', 'Yu Mincho', serif;
+  --font-mincho: 'Zen Old Mincho', 'Hiragino Mincho ProN', '游明朝', 'Yu Mincho', 'MS PMincho', serif;
   --font-sans-latin: 'Inter', sans-serif;
 }
 
