@@ -1037,7 +1037,7 @@ body.no-scroll {
   position: absolute;
   top: -2.2rem;
   left: 1.5rem;
-  z-index: 1000;
+  z-index: 998;
   width: 3.8rem;
 }
 @media (width >= 1024px) {
