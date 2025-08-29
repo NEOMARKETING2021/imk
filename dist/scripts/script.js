@@ -221,5 +221,5 @@
   initSmoothScrollWithoutHash();
   initHamburgerMenu();
   initSmartFloatButton();
-  toggleCtaLinkDisabled(true);
+  toggleCtaLinkDisabled(false);
 })();
